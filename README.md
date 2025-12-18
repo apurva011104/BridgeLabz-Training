@@ -15,3 +15,27 @@
 7. Power Calculation
 8. Area of a circle
 9. Volume of a cylinder
+
+
+# Day 2 tasks
+## Leetcode questions solved
+## Programming elements questions solved
+1. Calculate Harry's age
+2. Calculate average percent marks
+3. Convert 10.8kms into miles
+4. Calculate profit or loss
+5. Distribute pens
+6. Calculate fees to be paid for a course
+7. Calculate volume of Earth
+8. Convert kilometers into miles by taking user input
+9. Calculate fees to be paid for a course by taking user input
+10. Convert height from cenitimeters to feets and inches
+11. Basic calculator
+12. Area of a triangle
+13. Side of a square
+14. Convert distance in yards and miles
+15. Calculate Price
+16. Calculate number of handshakes
+17. Calculate Quotient and remainder
+18. Int Operation
+19. Double Operation
