@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class validParentheses {
+public class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> check=new Stack<>();
         for(int i=0;i<s.length();i++){
@@ -24,7 +24,7 @@ public class validParentheses {
         return true;
     }
     public static void main(String[] args) {
-        validParentheses vp=new validParentheses();
+        ValidParentheses vp=new ValidParentheses();
         String s="({[]})";
         boolean result=vp.isValid(s);
         System.out.println("Is the parentheses valid? "+result);
