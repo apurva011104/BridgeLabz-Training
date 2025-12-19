@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class handshakesCount {
+public class HandshakesCount {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the number of students: ");

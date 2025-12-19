@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class powerCalculation {
+public class PowerCalculation {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter base number: ");        

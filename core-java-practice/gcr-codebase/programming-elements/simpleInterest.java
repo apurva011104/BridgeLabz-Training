@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class simpleInterest {
+public class SimpleInterest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter principal amount: ");

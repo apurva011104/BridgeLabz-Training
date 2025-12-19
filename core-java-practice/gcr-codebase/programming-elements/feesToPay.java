@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class feesToPay {
+public class FeesToPay {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the total course fee: ");
