@@ -1,4 +1,4 @@
-public class calculateAge {
+public class CalculateAge {
     public static void main(String[] args) {
         int birthYear=2000;
         int currentYear=2024;
