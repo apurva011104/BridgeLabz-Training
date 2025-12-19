@@ -9,5 +9,6 @@ public class AverageOfThreeNumbers {
         double num3 = scan.nextDouble();                     //Takes third number input
         double average = (num1 + num2 + num3) / 3;          //Calculates average of three numbers
         System.out.println("Average of three numbers: " + average);
+        scan.close();
     }
 }
