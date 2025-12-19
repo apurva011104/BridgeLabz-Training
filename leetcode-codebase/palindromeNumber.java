@@ -1,4 +1,4 @@
-public class palindromeNumber {
+public class PalindromeNumber {
     public boolean isPalindrome(int x) {
         if(x<0) 
             return false;
@@ -11,7 +11,7 @@ public class palindromeNumber {
     }
 
     public static void main(String[] args) {
-        palindromeNumber pn=new palindromeNumber();
+        PalindromeNumber pn=new PalindromeNumber();
         int x=121;
         boolean result=pn.isPalindrome(x);
         System.out.println("Is palindrome? "+result);
