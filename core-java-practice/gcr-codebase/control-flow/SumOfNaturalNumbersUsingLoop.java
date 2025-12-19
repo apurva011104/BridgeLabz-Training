@@ -10,8 +10,9 @@ public class SumOfNaturalNumbersUsingLoop {
         } 
         else{
             int sum = 0;
-            for(int i=1; i<=num; i++){
-                sum += i;
+            while(num>0){
+                sum += num;
+                num--;
             }
             int sumUsingFormula = (num * (num + 1)) / 2;
             boolean isCorrect = (sum == sumUsingFormula);
