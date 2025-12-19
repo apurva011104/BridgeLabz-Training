@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class longestSubstring {
+public class LongestSubstring {
     public static boolean isUnique(String s){
         char []ch=new char[s.length()];
         for(int i=0;i<s.length();i++)
@@ -31,7 +31,7 @@ public class longestSubstring {
         return len.get(len.size()-1);
     }
     public static void main(String[] args) {
-        longestSubstring ls=new longestSubstring();
+        LongestSubstring ls=new LongestSubstring();
         String s="abcabcbb";
         int result=ls.lengthOfLongestSubstring(s);  
         System.out.println("Length of longest substring without repeating characters: "+result);
