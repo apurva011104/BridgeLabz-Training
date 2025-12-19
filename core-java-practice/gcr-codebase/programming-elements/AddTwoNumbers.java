@@ -8,7 +8,7 @@ public class AddTwoNumbers {
         System.out.print("Enter second number: ");  
         int y=scan.nextInt();
         int sum=x+y;
-        System.out.println("Sum of both numbers: "+sum);
+        System.out.printf("The sum of %d and %d is %d",x,y,sum);
         scan.close();
     }
 }
