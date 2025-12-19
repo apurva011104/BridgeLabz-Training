@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class areaOfATriangle {
+public class AreaOfATriangle {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the base of the triangle (in cms): ");   
