@@ -4,13 +4,13 @@ import java.util.Map;
 public class TwoSum {
     public int[] twoSum(int[]arr, int target){
         int []ans=new int[2];
-        Map<Integer,Integer> map=new HashMap<>();
+        Map<Integer,Integer> map=new HashMap<>();           //Create a hashmap to store the elements and their indices
         for(int i=0;i<arr.length;i++){
             if(map.containsKey(target-arr[i])){
-                return new int[]{i,map.get(target-arr[i])};
+                return new int[]{i,map.get(target-arr[i])};         //If the complement exists in the map, return the indices
             }
             else
-                map.put(arr[i],i);
+                map.put(arr[i],i);                 //Otherwise, add the current element to the map
         }
         return ans;
     }
