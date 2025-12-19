@@ -1,4 +1,4 @@
-public class averageMarks {
+public class AverageMarks {
     public static void main(String[] args) {
         double maths=94;
         double physics=95;
