@@ -4,6 +4,6 @@ public class AverageMarks {
         double physics=95;
         double chemistry=93;
         double averageMarks= (maths + physics + chemistry) / 3.0;
-        System.out.println("Average marks of the student: " + averageMarks);
+        System.out.println("Average marks of the student is " + averageMarks);
     }
 }
