@@ -11,7 +11,7 @@ public class BasicCalculator {
         double difference = num1 - num2;                  //Calculates difference   
         double product = num1 * num2;                     //Calculates product
         double division = num1 / num2;                    //Calculates quotient
-        System.out.println("The addition, subtraction, multiplication and division of the two numbers "+ num1 +" and " + num2 +" is "+ sum + ", " + difference + ", " + product + ", and " + division);
+        System.out.println("The sum, difference, product and division of the two numbers "+ num1 +" and " + num2 +" is "+ sum + ", " + difference + ", " + product + ", and " + division);
         scan.close();
     }
 }
