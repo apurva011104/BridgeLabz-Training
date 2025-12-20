@@ -15,7 +15,9 @@ public class CalculateGrade {
         //Calculating percentage
         int total=physics+chemistry+maths;
         double percentage=(total/300.0)*100;
-
+        System.out.printf("Percentage: %.3f",percentage);
+        System.out.println();
+        
         //Determining grade and remarks based on percentage
         if(percentage>=80){
             System.out.println("Grade: A");
