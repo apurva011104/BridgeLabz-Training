@@ -12,7 +12,7 @@ public class LargestAndSecondLargestDigit {
         int index=0;
         int originalNum=num;
 
-        while(num>0){
+        while(index<10 && num>0){
             digits[index]=num%10;
             num/=10;
         }
