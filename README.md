@@ -2,13 +2,13 @@
 This log documents the daily progress of tasks completed during the BridgeLabz training program (ID: 2115001014), as recorded in the repository’s README. Tasks are grouped by week with thematic headings, detailing the work done on each date and day.
 
 ## Repository Structure
-BridgeLabz-Training
-    |------ core-java-practice
-    |           |------ gcr-codebase
-    |           |           |------ control-flow
-    |           |           |------ programming-elements
-    |           |------ leetcode-codebase
-    |           |------ scenario-based
+BridgeLabz-Training 
+    |------ core-java-practice 
+    |           |------ gcr-codebase 
+    |           |           |------ control-flow 
+    |           |           |------ programming-elements 
+    |           |------ leetcode-codebase 
+    |           |------ scenario-based 
             
 
 
