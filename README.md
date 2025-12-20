@@ -4,3 +4,4 @@ This log documents the daily progress of tasks completed during the BridgeLabz t
 - **17/December/2025:** Solved and submitted some leetcode questions and basic programming elements questions
 - **18/December/2025:** Solved and submitted basic programming elements questions
 - **19/December/2025:** Studied the basics of java and solved control flow problems
+- **20/December/2025:** Solved control flow problems
