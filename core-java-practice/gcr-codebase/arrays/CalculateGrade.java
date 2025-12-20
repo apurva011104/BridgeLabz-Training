@@ -75,12 +75,5 @@ public class CalculateGrade {
         }
 
         scan.close();
-        
-        
-        
-       
-        
-
-        scan.close();
     }
 }
