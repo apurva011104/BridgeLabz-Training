@@ -3,12 +3,12 @@ This log documents the daily progress of tasks completed during the BridgeLabz t
 
 ## Repository Structure
 BridgeLabz-Training 
-    |------ core-java-practice 
-    |           |------ gcr-codebase 
-    |           |           |------ control-flow 
-    |           |           |------ programming-elements 
-    |           |------ leetcode-codebase 
-    |           |------ scenario-based 
+    ├── core-java-practice 
+    |           ├── gcr-codebase 
+    |           |           ├── control-flow 
+    |           |           └── programming-elements 
+    |           ├── leetcode-codebase 
+    |           └── scenario-based 
             
 
 
