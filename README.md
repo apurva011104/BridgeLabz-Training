@@ -10,7 +10,8 @@ BridgeLabz-Training
 │   │   ├── control-flow  
 │   │   └── programming-elements  
 │   ├── leetcode-codebase  
-│   └── scenario-based  
+│   └── scenario-based   
+└──README.md
 
 ## Week 1: Getting Started with Git and Basics of Programming Using Java
 
