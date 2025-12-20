@@ -14,6 +14,7 @@ public class LargestAndSecondLargestDigit {
 
         while(index<10 && num>0){
             digits[index]=num%10;
+            index++;
             num/=10;
         }
 
