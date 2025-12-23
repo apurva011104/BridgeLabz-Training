@@ -4,6 +4,7 @@ public class BMICalculator {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
 
+        //Taking inputs
         System.out.print("Enter number of Persons: ");
         int numberOfPerson=scan.nextInt();
 
@@ -28,6 +29,7 @@ public class BMICalculator {
             personData[i][1]=h;
         }
 
+        //Fiding wheter user is overweight, underweight, normal or obese
         String status[]=new String[numberOfPerson];
 
         for(int i=0;i<numberOfPerson;i++){
@@ -49,6 +51,7 @@ public class BMICalculator {
             }
         }
 
+        //Displaying results
         for(int i=0;i<numberOfPerson;i++){
             System.out.println("Person "+(i+1)+" details:");
             System.out.println("Weight: "+personData[i][0]+"kgs");
