@@ -48,5 +48,6 @@ public class SplitString {
 
         System.out.println("Splitting string using user-defined method: "+Arrays.toString(splitString));
         System.out.println("Splitting string usingbuilt-in method: "+Arrays.toString(splitUsingBuiltIn));
+        System.out.println("Are both output similar?: "+Arrays.toString(splitString).equals(Arrays.toString(splitUsingBuiltIn)));
     }
 }
