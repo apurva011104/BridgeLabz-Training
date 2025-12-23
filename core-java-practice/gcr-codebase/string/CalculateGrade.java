@@ -1,6 +1,16 @@
 import java.util.Scanner;
 
 public class CalculateGrade {
+
+    public static double[] calculatePercentage(double [][]subjectMarks, int numberOfStudents){
+        double []percentage=new double[numberOfStudents];
+        for(int i=0;i<numberOfStudents;i++){
+            double total=subjectMarks[i][0]+subjectMarks[i][1]+subjectMarks[i][2];
+            percentage[i]=(total/300.0)*100;
+        }
+        return percentage;
+    }
+    
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
 
@@ -21,11 +31,7 @@ public class CalculateGrade {
         }
         
         //Calculating percentage
-        double []percentage=new double[numberOfStudents];
-        for(int i=0;i<numberOfStudents;i++){
-            double total=subjectMarks[i][0]+subjectMarks[i][1]+subjectMarks[i][2];
-            percentage[i]=(total/300.0)*100;
-        }
+        double []percentage=calculatePercentage(subjectMarks, numberOfStudents);
 
         char grade[]=new char[numberOfStudents];
         String remark[]=new String[numberOfStudents];
