@@ -13,7 +13,7 @@ BridgeLabz-Training
 │   └── scenario-based   
 └──README.md
 
-## Week 1: Getting Started with Git and Basics of Programming Using Java
+## Week 1 (17/December/2025 - 21/December/2025): Getting Started with Git and Basics of Programming Using Java
 
 ### - 17 December 2025
 Topics studied: Git   
@@ -45,7 +45,7 @@ Problem statements topics: Control flow, Scenario based and Arrays
 [Arrays Problems Link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/arrays)   
 
 ### - **21 December 2025**
-Topics studied: Java strings    
+Topics covered: Revision of previously studied topics   
 #### Leetcode questions solved:
 1. Largest Number
 2. Happy Number
@@ -53,3 +53,15 @@ Topics studied: Java strings
 4. Reverse Integer
 5. Reverse Words In A String    
 **Link:** [Leetcode link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/leetcode-codebase)
+
+## Week 2 (22/December/2025 - 28/December/2025):
+
+### - **22 December 2025**   
+Topics studied: Java strings   
+Problem statements topics: Java strings   
+[Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
+
+### - **23 December 2025**   
+Topics studied: Java strings   
+Problem statements topics: Java strings   
+[Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
