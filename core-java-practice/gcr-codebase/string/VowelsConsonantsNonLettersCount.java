@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class VowelsAndConsonants {
-
+public class VowelsConsonantsNonLettersCount {
     final String vowels="aeiouAEIOU";
     final String consonants="bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
 
@@ -35,5 +34,5 @@ public class VowelsAndConsonants {
         System.out.println("No. of consonants: "+countVowelsConsonantsAndNotLetters[1]);
         System.out.println("No. of non-letters: "+countVowelsConsonantsAndNotLetters[2]);
     }
-    
+
 }
