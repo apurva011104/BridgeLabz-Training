@@ -62,6 +62,6 @@ Problem statements topics: Java strings
 [Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
 
 ### - **23 December 2025**   
-Topics studied: Java strings   
+Topics studied: Java strings, Software Development Cycle 
 Problem statements topics: Java strings   
 [Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
