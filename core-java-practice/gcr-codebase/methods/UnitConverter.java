@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class UnitConverter {
 
     public static double convertKilometersIntoMiles(double km){
@@ -11,7 +9,7 @@ public class UnitConverter {
     }
 
     public static double convertFeetsIntoMeters(double feets){
-        return 0.3408*feets;
+        return 0.3048*feets;
     }
 
     public static double convertMetersIntoFeets(double meters){
