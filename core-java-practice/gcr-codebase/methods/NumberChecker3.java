@@ -110,5 +110,7 @@ public class NumberChecker3 {
 
         //Displaying if number is a duck number
         System.out.println("Is duck number? "+isDuckNumber(num));
+
+        scan.close();
     }
 }
