@@ -46,7 +46,7 @@ public class Calendar {
         int row=1;
         System.out.println(month+", "+year);
         System.out.println("Sun     Mon     Tue     Wed     Thur    Fri     Sat");
-        while(date<numberOfDays){
+        while(date<=numberOfDays){
             if(row==1 && col<dayofWeek){
                 System.out.print("\t");
                 col++;
