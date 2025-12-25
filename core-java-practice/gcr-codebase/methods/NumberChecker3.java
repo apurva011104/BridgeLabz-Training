@@ -105,7 +105,6 @@ public class NumberChecker3 {
         //Displaying the results after comparing both array
         System.out.println("Are both arrays equal? "+compareArrays(digitsArray, reversedDigitsArray));
 
-
         //Displaying if number is a palindrome number
         System.out.println("Is palindrome number? "+isPalindrome(num));
 
