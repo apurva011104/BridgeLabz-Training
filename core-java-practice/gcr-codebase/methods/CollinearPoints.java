@@ -3,17 +3,20 @@ import java.util.Arrays;
 
 public class CollinearPoints {
 
+    //Calculating slope. (slope= (y2-y1)/(x2-x1))
     public static double calculateSlope( int[] point1 , int[] point2){
         double slope = (point2[1]-point1[1]) / (point2[0]-point1[0]);
         slope = Math.round(slope * 100.0) / 100.0;
         return slope;
     }
 
+    //calculating determinant of 2x2 matrix
     public static int  calculateDeterminant(int [][]matrix){
         int determinant = (matrix[0][0] * matrix [1][1]) - (matrix[0][1] * matrix[1][0]);
         return determinant;
     }
 
+    //Checking if points are collinear using slope formula
     public static boolean collinearPointsUsingSlopeFormula( int[] point1 , int[] point2 , int[] point3 ){
         double slope12 = calculateSlope(point1, point2);
         double slope23 = calculateSlope(point2, point3);
@@ -24,6 +27,7 @@ public class CollinearPoints {
         return false;
     }
 
+    //Checking if points are collinear using triangle formula
     public static boolean collinearPointsUsingTriangleFormula( int[] point1 , int[] point2 , int[] point3 ){
         int [][]matrix = new int[2][2];
         matrix[0][0] = point1[0]-point2[0];
