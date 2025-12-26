@@ -65,3 +65,13 @@ Problem statements topics: Java strings
 Topics studied: Java strings   
 Problem statements topics: Java strings   
 [Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
+
+### - **24 December 2025**   
+Topics studied: Java methods    
+Problem statements topics: Java methods      
+[Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
+
+### - **26 December 2025**   
+Topics studied: Java methods     
+Problem statements topics: Java methods    
+[Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
