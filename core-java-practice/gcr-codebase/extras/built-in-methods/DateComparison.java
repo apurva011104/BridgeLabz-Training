@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class DateComparison {
 
+    //method to take data input
     public static LocalDate takeDateInput(Scanner scan , DateTimeFormatter formatter){
         LocalDate localDate = null;
         while(true){
@@ -31,9 +32,11 @@ public class DateComparison {
         System.out.print("Enter date in the format 'dd-MM-yyyy': ");
         LocalDate localDate2 = takeDateInput(scan, formatter);
 
+        //Checking if date 1 is before, after or same as date 2
         boolean isBefore = localDate1.isBefore(localDate2);
         boolean isAfter = localDate1.isAfter(localDate2);
         
+        //Displaying results
         if(isBefore){
             System.out.println(localDate1+" is before "+localDate2);
         }
