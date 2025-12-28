@@ -28,7 +28,7 @@ public class FibonacciSequenceGenerator {
         return series;
     }
 
-    //Method to dispplay the series
+    //Method to display the series
     public static void displaySeries(long []series){
         System.out.println("Fibonacci series upto "+(series.length-1)+": ");
         for(int i=0 ; i<series.length ; i++){
