@@ -54,7 +54,7 @@ Topics covered: Revision of previously studied topics
 5. Reverse Words In A String    
 **Link:** [Leetcode link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/leetcode-codebase)
 
-## Week 2 (22/December/2025 - 28/December/2025):
+## Week 2 (22/December/2025 - 28/December/2025)
 
 ### - **22 December 2025**   
 Topics studied: Java strings   
@@ -69,9 +69,18 @@ Problem statements topics: Java strings
 ### - **24 December 2025**   
 Topics studied: Java methods    
 Problem statements topics: Java methods      
-[Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
+[Java methods problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)   
 
 ### - **26 December 2025**   
 Topics studied: Java methods     
-Problem statements topics: Java methods    
-[Strings problems link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)
+Problem statements topics: Java methods , Java strings extras    
+[Java methods link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods)      
+[Java strings extras link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras/strings)     
+
+## Week 2 (22/December/2025 - 28/December/2025):
+
+### - **29 Decemeber 2025**     
+Topics studied: OOPs in java      
+Problem statements topics: Java built-in methods extras, Scenario based       
+[Java built-in methods extras link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras/built-in-methods)      
+[Scenario-Based Problems Link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)     
