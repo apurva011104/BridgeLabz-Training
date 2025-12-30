@@ -69,8 +69,10 @@ public class SnakeAndLadder {
 
         Player player1 = new Player(1);
         System.out.println("Player1's start position: "+player1.position);
+        int dieRolls=0;
 
         while(player1.position<100){
+            dieRolls++;
             int dieNumber = player1.rollTheDie();
             System.out.println("Number player1 got by rolling the die: "+dieNumber);
 
@@ -80,6 +82,7 @@ public class SnakeAndLadder {
             System.out.println("----------------------------------------------------------");
         }
         System.out.println("Player1 reached 100");
+        System.out.println("Total die rolls: "+dieRolls);
 
 
     }
