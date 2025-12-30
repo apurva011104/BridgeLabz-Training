@@ -32,13 +32,30 @@ public class LineComparison {
         return Math.round(length*100.0)/100.0;
     }
 
-    //Method to check equality of length of the line
-    public static boolean checkLineEquality(Double length1 , Double length2){
-        return length1.equals(length2);
+    //Method to check compare length of the line
+    public static int compareLengths(Double length1 , Double length2){
+        int compare =  length1.compareTo(length2);      //Return positive integer if length1 greater length2 , negative integer if length1 smaller than length 2 and zero if both lengths are equal
+        return compare>0 ? 1 : ( compare<0 ? -1 : 0 );
+    }
+
+    //Method to get comparison : equal, greater or lesser
+    public static String compareLineLengths(Double length1 , Double length2){
+        int compare = compareLengths(length1, length2);
+        
+        switch (compare) {
+            case 1:
+                return "greater";
+            case -1:
+                return "lesser";
+            default:
+                return "equal";
+        }
     }
 
     public static void main(String[] args) {
+        
         start();
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter line1 points coordinates: ");
         int [][]line1 = takeLinePointsInput(scan);
@@ -48,11 +65,12 @@ public class LineComparison {
         Double length1 = calculateLength(line1);
         Double length2 = calculateLength(line2);
 
-        boolean isEqual = checkLineEquality(length1, length2);
+        String lineComparison = compareLineLengths(length1, length2);
 
+        //Displaying results
         System.out.printf("Length of the line1: %.2f %n",length1);
         System.out.printf("Length of the line2: %.2f %n",length2);
-        System.out.println("Is line1 and line2 equal?: "+isEqual);
+        System.out.println("Line 1 is "+lineComparison+" to Line 2");
         scan.close();
     }
 }
