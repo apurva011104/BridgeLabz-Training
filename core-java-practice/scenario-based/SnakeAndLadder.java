@@ -23,8 +23,8 @@ public class SnakeAndLadder {
             if(position+dieNumber<0){       //If new position is below 0, then the player restarts from 0
                 position = 0;      
             }
-            else if(position+dieNumber>100){        //If new position is above 100, then positioning the player to 100.
-                position = 100;             
+            else if(position+dieNumber>100){        //If new position is above 100, then no changes in position
+                return;            
             }
             else{
                 position+=dieNumber;
