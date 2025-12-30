@@ -83,4 +83,10 @@ Problem statements topics: Java methods , Java strings extras
 Topics studied: OOPs in java      
 Problem statements topics: Java built-in methods extras, Scenario based       
 [Java built-in methods extras link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras/built-in-methods)      
-[Scenario-Based Problems Link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)     
+[Scenario-Based Problems Link](https://github.com/apurva011104/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based)  
+
+### - **30 December 2025**
+Topics studied: OOPs in Java      
+Problem statements topics: Java class and object , Scenario based     
+**Scenario-Based Problems:** [Line Comparison Problem](https://github.com/apurva011104/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/LineComparison.java), [Snake & Ladder Simulator](https://github.com/apurva011104/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/SnakeAndLadder.java)     
+[Java class and object problems link]()
