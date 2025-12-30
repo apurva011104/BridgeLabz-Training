@@ -1,37 +1,50 @@
 public class EmployeeWageComputation {
 
+    //Initializing constants
+    static final int IS_FULL_TIME = 2;
+    static final int IS_PART_TIME = 1;
     static final int WAGE_PER_HOUR = 20;
     static final int FULL_DAY_HOUR = 8;
     static final int PART_TIME_HOUR = 4;
     static final int MAXIMUM_WORKING_DAYS_PER_MONTH = 20;
     static final int MAXIMUM_WORKING_HOURS_PER_MONTH = 100;
 
-    //Start: Method to display welcome
+    //Method to display welcome
     public static void start(){
         System.out.println("Welcome to Employee Wage Computation program");
     }
 
-    //UC1: Check if employee is present or absent
-    public static int presentOrAbsent(){
-        return (Math.random()<0.5)?0:1;     //Returns 1 if present else 0
+    //Method to check if employee is full time, part time or absent
+    public static int checkEmployee(){
+        return (int)(Math.random()*3);
+    }
+
+    //Method to get employee status
+    public static String employeeStatus(int checkEmployee){
+        switch(checkEmployee){
+            case IS_FULL_TIME:
+                return "Full Time Employee";
+            case IS_PART_TIME:
+                return "Part Time Employee";
+            default:
+                return "Absent";
+        }  
     }
 
     //Method to get working hours for the day
-    public static int getWorkingHours(){
-       int fullTime = (int)(Math.random()*2);
-
-       //UC4: Use of switch case statement
-        switch(fullTime){
-            case 1:
+    public static int getWorkingHours( int checkEmployee ){
+        switch(checkEmployee){
+            case IS_FULL_TIME:
                 return FULL_DAY_HOUR;
-            case 0:
+            case IS_PART_TIME:
                 return PART_TIME_HOUR;
             default:
                 return 0;
         }  
     }
 
-    //UC2: Method to calculate daily employee wage
+
+    //Method to calculate daily employee wage
     public static int calculateDailyWage(int workingHours){
         return workingHours * WAGE_PER_HOUR;
     }
@@ -44,38 +57,28 @@ public class EmployeeWageComputation {
         int totalWorkingHours = 0;
         int totalWage = 0;
 
-        //UC6: Calculate wages till a condition of total working hours or days is reached for a month
+        //Calculate wages till a condition of total working hours or days is reached for a month
         while(totalWorkingDays < MAXIMUM_WORKING_DAYS_PER_MONTH && totalWorkingHours < MAXIMUM_WORKING_HOURS_PER_MONTH){
             totalWorkingDays++;
 
-            int presentOrAbsent = presentOrAbsent();
-
-            int workingHoursForADay;
-
-            //UC4: Use of switch case statement
-            switch(presentOrAbsent){
-                case 1:
-                    workingHoursForADay=getWorkingHours();
-                    break;
-                case 0:
-                    workingHoursForADay=0;
-                    break;
-                default:
-                    workingHoursForADay=0;
-            }
+            int checkEmployee = checkEmployee();
+            String employeeStatus = employeeStatus(checkEmployee);
+            int workingHoursForADay = getWorkingHours(checkEmployee);
 
             totalWorkingHours+=workingHoursForADay;
 
             int dailyWage = calculateDailyWage(workingHoursForADay);
-            totalWage+=dailyWage;       //UC5: Calculating wages daily for a month
+            totalWage+=dailyWage;       //Calculating wages daily for a month
 
+            //Displaying daily data
             System.out.println("Day "+(totalWorkingDays));
-            System.out.println("Present or Absent: "+(presentOrAbsent==0?"Absent":"Present"));
+            System.out.println("Employee status "+employeeStatus);
             System.out.println("Today's work hours: "+workingHoursForADay);
             System.out.println("Today's wage: "+dailyWage);
             System.out.println("---------------------------------------------------");
         }
 
+        //Displaying monthly data
         System.out.println("Monthly data");
         System.out.println("Total working days: "+totalWorkingDays);
         System.out.println("Total working hours: "+totalWorkingHours);
