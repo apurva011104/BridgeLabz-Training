@@ -20,7 +20,15 @@ public class SnakeAndLadder {
 
         //Methods to update position
         private void setNewPosition(int dieNumber){
-            position+=dieNumber;
+            if(position+dieNumber<0){       //If new position is below 0, then the player restarts from 0
+                position = 0;      
+            }
+            else if(position+dieNumber>100){        //If new position is above 100, then positioning the player to 100.
+                position = 100;             
+            }
+            else{
+                position+=dieNumber;
+            }
         }
         public void updatePosition(int dieNumber){
             setNewPosition(dieNumber);
@@ -62,12 +70,16 @@ public class SnakeAndLadder {
         Player player1 = new Player(1);
         System.out.println("Player1's start position: "+player1.position);
 
-        int dieNumber = player1.rollTheDie();
-        System.out.println("Number player1 got by rolling the die: "+dieNumber);
+        while(player1.position<100){
+            int dieNumber = player1.rollTheDie();
+            System.out.println("Number player1 got by rolling the die: "+dieNumber);
 
-        String player1Option = getOption(player1,dieNumber);
-        System.out.println("Player1 option: "+player1Option);
-        System.out.println("Player1's current position: "+player1.position);
+            String player1Option = getOption(player1,dieNumber);
+            System.out.println("Player1 option: "+player1Option);
+            System.out.println("Player1's current position: "+player1.position);
+            System.out.println("----------------------------------------------------------");
+        }
+        System.out.println("Player1 reached 100");
 
 
     }
