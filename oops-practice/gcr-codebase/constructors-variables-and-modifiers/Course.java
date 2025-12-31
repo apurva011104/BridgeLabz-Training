@@ -24,10 +24,6 @@ public class Course {
         this.fee = fee;
     }
 
-    public static void setInstituteName(String newInstituteName){
-        instituteName = newInstituteName;
-    }
-
     public String getCourseName(){
         return courseName;
     }
@@ -40,15 +36,19 @@ public class Course {
         return fee;
     }
 
+    public static String getInstituteName(){
+        return instituteName;
+    }
+
     //Class method to update institute name
-    public static void updateInstituteName(String newInstituteName){
+    public static void updateInstitueName(String newInstituteName){
         instituteName = newInstituteName;
     }
 
     //Instance method to display course details
     public void displayCourseDetails(){
         System.out.println("----------------------------------------------------");
-        System.out.println("Institute name: "+instituteName);
+        System.out.println("Institute name: "+getInstituteName());
         System.out.println("Course Name: "+getCourseName());
         System.out.println("Duration: "+getDuration()+" months");
         System.out.printf("Fee: INR %.2f%n",getFee());
@@ -60,7 +60,7 @@ public class Course {
         course1.displayCourseDetails();
         Course course2 = new Course("Software Development",6,14000.00);
         course2.displayCourseDetails();
-        updateInstituteName("GLA");
+        updateInstitueName("GLA");
         course1.displayCourseDetails();
         course2.displayCourseDetails();
         Course course3 = new Course("Web Development", 5, 11000.00);
