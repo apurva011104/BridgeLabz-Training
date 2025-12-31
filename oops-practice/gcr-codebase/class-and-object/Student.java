@@ -4,6 +4,7 @@ public class Student {
     String rollNumber;
     int []marks;
 
+    //Constructor to create student
     public Student(String name, String rollNumber) {
         this.name = name;
         this.rollNumber = rollNumber;
