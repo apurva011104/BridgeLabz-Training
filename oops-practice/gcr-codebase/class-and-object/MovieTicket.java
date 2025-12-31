@@ -45,5 +45,4 @@ public class MovieTicket {
         ticket2.bookTicket("Dragon", "A10", 120);
         ticket2.displayTicketDetails();
     }
-    
 }
