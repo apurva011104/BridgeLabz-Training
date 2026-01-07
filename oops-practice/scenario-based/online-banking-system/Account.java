@@ -26,14 +26,14 @@ public abstract class Account {
 
     public static String generateAccountNumber(String accountType){
 
-        String accNumber = accountType.substring(0,3).toUpperCase();
-
+        String prefix = accountType.substring(0,3).toUpperCase();
+        String accNumber;
         do {
             StringBuilder id = new StringBuilder();
             for (int i = 0; i < 12; i++) {
                 id.append((char) ('0' + (int)(Math.random() * 10)));
             }
-            accNumber += id.toString();
+            accNumber = prefix+id.toString();
         } 
         while (!isUniqueNumber(accNumber));
 
