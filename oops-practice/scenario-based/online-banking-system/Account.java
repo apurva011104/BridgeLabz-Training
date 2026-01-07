@@ -73,6 +73,7 @@ public abstract class Account {
         }
         balance -= amount;
         transactionHistory.add("Withdrawn: " + amount);
+        System.out.println("Account number: "+accountNumber);
         System.out.printf("Amount withdrawn successfully. Withdrawal amount: %.2f INR %n",amount);
         checkBalance();
         System.out.println();
@@ -83,6 +84,7 @@ public abstract class Account {
         for (String record : transactionHistory) {
             System.out.println(record);
         }
+        System.out.println();
     }
 
     public abstract double calculateInterest();
