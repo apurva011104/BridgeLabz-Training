@@ -1,18 +1,44 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public abstract class Account {
 
+    private static final Set<String> allAccountNumbers = new HashSet<>();
     private final String accountNumber;
     private String accountHolder;
     protected double balance;
     private List<String> transactionHistory;
+    private String accountType;
 
-    public Account(String accountNumber, String accountHolder, double balance){
-        this.accountNumber = accountNumber;
+    public Account(String accountHolder, double balance, String accountType){
+        this.accountNumber = generateAccountNumber(accountType);
         this.accountHolder = accountHolder;
         this.balance = balance;
+        this.accountType=accountType;
         this.transactionHistory = new ArrayList<>();
+    }
+
+    public static boolean isUniqueNumber(String number){
+        return !allAccountNumbers.contains(number);
+    }
+
+    public static String generateAccountNumber(String accountType){
+
+        String accNumber = accountType.substring(0,3).toUpperCase();
+
+        do {
+            StringBuilder id = new StringBuilder();
+            for (int i = 0; i < 12; i++) {
+                id.append((char) ('0' + (int)(Math.random() * 10)));
+            }
+            accNumber += id.toString();
+        } 
+        while (!isUniqueNumber(accNumber));
+
+        allAccountNumbers.add(accNumber);
+        return accNumber;
     }
 
     public String getAccountNumber() {
