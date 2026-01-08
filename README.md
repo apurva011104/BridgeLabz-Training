@@ -5,12 +5,26 @@ This log documents the daily progress of tasks completed during the BridgeLabz t
 ## Repository Structure
 
 BridgeLabz-Training  
-├── core-java-practice  
+├── core-java-practice     
 │   ├── gcr-codebase  
-│   │   ├── control-flow  
-│   │   └── programming-elements  
-│   ├── leetcode-codebase  
-│   └── scenario-based   
+│   │   ├── arrays     
+│   │   ├── control-flow     
+│   │   ├── extras     
+│   │   ├── methods           
+│   │   ├── programming-elements          
+│   │   └── string      
+│   ├── leetcode-codebase    
+│   └── scenario-based      
+├── oops-practice     
+│   ├── gcr-codebase  
+│   │   ├── class-and-object     
+│   │   ├── constructors-variables-and-modifiers     
+│   │   ├── enncapsulation-polymorphism-abstraction     
+│   │   ├── inheritance           
+│   │   ├── object-modelling          
+│   │   └── this-static-final-and-instanceof      
+│   ├── leetcode-codebase    
+│   └── scenario-based      
 └──README.md
 
 ## Week 1 (17/December/2025 - 21/December/2025): Getting Started with Git and Basics of Programming Using Java
