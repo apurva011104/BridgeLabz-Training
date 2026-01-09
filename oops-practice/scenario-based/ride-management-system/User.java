@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class User extends Person {
+class User extends Person {
 
     private static  Set<String> allUserID = new HashSet<>();
 
