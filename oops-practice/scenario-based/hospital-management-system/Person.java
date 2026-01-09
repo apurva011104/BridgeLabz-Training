@@ -1,4 +1,4 @@
-public class Person {
+abstract class Person {
     
     private final String ID;
     private String name;
@@ -20,4 +20,5 @@ public class Person {
         return ID;
     }
 
+    public abstract void displayInfo();
 }
