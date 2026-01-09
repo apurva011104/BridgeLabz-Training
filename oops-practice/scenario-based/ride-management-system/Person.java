@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Person {
+class Person {
 
     private static Set<String> registeredPhoneNumbers= new HashSet<>();
     private final String ID;
