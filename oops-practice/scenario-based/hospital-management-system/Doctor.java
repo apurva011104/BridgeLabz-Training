@@ -23,6 +23,6 @@ public class Doctor extends Person{
     }
 
     public void updateAvailability(boolean availability) {
-        this.isAvailable = availability;
+        this.availability = availability;
     }
 }
