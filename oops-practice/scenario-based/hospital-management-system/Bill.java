@@ -7,7 +7,7 @@ class Bill{
     }
 
     public void generateBill() {
-        System.out.printf("Total Bill: %.2f INR%n" + patient.calculateBill());
+        System.out.printf("Total Bill: %.2f INR%n",patient.calculateBill());
     }
 
 }
