@@ -112,9 +112,17 @@ public class Hospital{
         for(Map.Entry<Patient,Doctor> entry: assignedRecord.entrySet()){
             Patient patient = entry.getKey();
             Doctor doctor = entry.getValue();
-            System.out.printf("%d. Patient ID: %s, Patient name: %s, Assigned doctor ID: %s, Assigned doctor name: %s",idx, patient.getID(), patient.getName(), doctor.getID(), doctor.getAvailability());
+            System.out.printf("%d. Patient ID: %s, Patient name: %s, Assigned doctor ID: %s, Assigned doctor name: %s%n",idx, patient.getID(), patient.getName(), doctor.getID(), doctor.getName());
             idx++;
         }
+    }
+
+    public void displayBill(Patient patient){
+        IPayable iPayable = patient;
+        
+        System.out.print("Patient with ID "+patient.getID()+" and name"+patient.getName()+" ");
+        Bill bill = new Bill(iPayable);
+        bill.generateBill();
     }
 
     /*-------------------------UPDATE OPERATIONS--------------------------------*/
@@ -207,11 +215,11 @@ public class Hospital{
             if(entry.getValue().equals(doctorToRemove)){
                 Patient patient = entry.getKey();
                 unassignDoctor(patient);
+                doctorRecord.remove(doctorToRemove);
                 assignDoctor(patient);
                 break;
             }
         }
-        doctorRecord.remove(doctorToRemove);
         doctorIDs.remove(doctorId);
         System.out.println("Doctor removed successfully");
     }
