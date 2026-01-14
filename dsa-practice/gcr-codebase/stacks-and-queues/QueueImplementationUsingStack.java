@@ -11,10 +11,12 @@ public class QueueImplementationUsingStack {
         this.dequeue = new Stack<>();
     }
 
+    //Method to add integer element
     public void add(int number){
         enqueue.push(number);
     }
 
+    //Method to remove the first element
     public int remove() throws NoSuchElementException{
         if(enqueue.isEmpty())
             throw new NoSuchElementException("Queue is empty");
@@ -28,6 +30,7 @@ public class QueueImplementationUsingStack {
         return n;
     }
     
+    //Method to display the first element
     public int peek() throws NoSuchElementException{
         if(enqueue.isEmpty())
             throw new NoSuchElementException("Queue is empty");
@@ -42,20 +45,24 @@ public class QueueImplementationUsingStack {
         return n;
     }
 
+    //Method to find size
     public int size(){
         return enqueue.size();
     }
 
+    //Method to check if queue is empty or not
     public boolean isEmpty(){
         return size()==0;
     }
 
+    //Method to clear the queue
     public void clear(){
         while(!enqueue.isEmpty()){
             enqueue.pop();
         }
     }
 
+    //Method to convert the queue into string
     @Override
     public String toString(){
         if(enqueue.isEmpty()){
@@ -86,5 +93,10 @@ public class QueueImplementationUsingStack {
 
         System.out.println(queue.peek());
         System.out.println(queue.toString());
+
+        queue.clear();
+
+        System.out.println(queue.toString());
+        System.out.println(queue.isEmpty());
     }
 }
