@@ -7,8 +7,7 @@ public class Customer {
     private String customerName;
     private List<Payment> paymentMethods;
 
-    public Customer(String customerID, String customerName){
-
+    public Customer(String customerID, String customerName) {
         this.customerID = customerID;
         this.customerName = customerName;
         this.paymentMethods = new ArrayList<>();
