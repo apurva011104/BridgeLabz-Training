@@ -146,3 +146,33 @@ Problem statement topics: Pillars of OOPs, Scenario-based, Leetcode
 Topics studied- Data structures basics, Linked list in Java     
 Problem statement topics- Scenario-based      
 **Scenario-based problem statements:** [Ride Management System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/ride-management-system),[Online Banking System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/online-banking-system)
+
+### - 8 January 2026
+Topics studied- Linked list in Java    
+Problem statement topics- Linked list in Java      
+[Linked list solutions Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linked-list)     
+
+### - 9 January 2026
+Topics studied- Stacks, Queues, HashMaps and Hashing in Java        
+Problem statement topics- Scenario based problems   
+**Scenario-based problem statements:** [Hospital Patient Management System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/hospital-management-system), [Vehicle Rental Application](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/vehicle-rental-system)
+
+## Week 4 (12/January/2026 - 17/January/2026) - Data Structure & Algorithms
+
+### - 12 January 2026
+Topics studied- Stacks, Queues, HashMaps and Hashing in Java     
+Problem statement topics- Scenario based problems   
+**Scenario-based problem statements:** [E-Commerce Order Management System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/ecommerce-order-management-system),[Student Course Registration System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/student-course-management-system) 
+
+### - 13 January 2026
+Topics studied- Sorting algorithms in Java, Git merge conflict    
+Problem statement topics- Scenario based problems   
+**Scenario-based problem statements:** [Inventory Management System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/inventory-management-system), [Hospital Management System](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/hospital-management-system-2)    
+
+### - 14 January 2026
+Topics studied- Sorting algorithms in Java    
+Problem statement topics- Stacks, Queues, HashMaps and Hashing in Java     
+[Stacks & Queues Problem Statement Links](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stacks-and-queues), [HashMap and HashFunction Problem Statement Links](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/hashmap-and-hashfunction)
+
+### - 15 January 2026
+
