@@ -19,12 +19,20 @@ BridgeLabz-Training
 │   ├── gcr-codebase  
 │   │   ├── class-and-object     
 │   │   ├── constructors-variables-and-modifiers     
-│   │   ├── enncapsulation-polymorphism-abstraction     
+│   │   ├── encapsulation-polymorphism-abstraction     
 │   │   ├── inheritance           
 │   │   ├── object-modelling          
 │   │   └── this-static-final-and-instanceof      
 │   ├── leetcode-codebase    
-│   └── scenario-based      
+│   └── scenario-based    
+├── dsa-practice  
+│   ├── gcr-codebase   
+│   │   ├── hashmap-and-hashfunction    
+│   │   ├── linked-list    
+│   │   ├── stacks-and-queues     
+│   │   ├── sorting-algorithms    
+│   ├── leetcode-codebase      
+│   └── scenario-based                 
 └──README.md
 
 ## Week 1 (17/December/2025 - 21/December/2025): Getting Started with Git and Basics of Programming Using Java
@@ -175,4 +183,7 @@ Problem statement topics- Stacks, Queues, HashMaps and Hashing in Java
 [Stacks & Queues Problem Statement Links](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stacks-and-queues), [HashMap and HashFunction Problem Statement Links](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/hashmap-and-hashfunction)
 
 ### - 15 January 2026
-
+Topics studied- Linear Search and Binary Search, StringBuilder, StringBuffer, 4-Layer Architecture in Java    
+Problem statement topics- Sorting algorithms, Leetcode questions      
+[Sorting Algorithms Problem Statement Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms)     
+**Leetcode Problem statements link:** [Reverse Linked List](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ReverseLinkedList.java),[Reverse Linked List II](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ReverseLinkedList2.java), [Partition List](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/PartitionList.java)
