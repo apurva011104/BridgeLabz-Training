@@ -7,6 +7,7 @@ public class Main {
         addressBookMain.addContact();
         try {
             addressBookMain.updateContact();
+            addressBookMain.deleteContact();
         } 
         catch (InvalidContactException e) {
             System.out.println(e);
