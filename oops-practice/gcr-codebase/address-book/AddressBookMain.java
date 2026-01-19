@@ -75,4 +75,15 @@ public class AddressBookMain {
         addressBook.updateContact(contact, firstName, lastName, address, city, state, zip, phoneNumber, email);
         
     }
+
+    /*--------------------------DELETE OPERATIONS-------------------------*/
+    public void deleteContact() throws InvalidContactException{
+        System.out.print("Enter full name of the contact you want to update: ");
+        String name = SCANNER.nextLine();
+        Contact contact = addressBook.searchContact(name);
+        if(contact == null){
+            throw new InvalidContactException("No such contact found in the address book");
+        }
+        addressBook.deleteContact(contact);
+    }
 }
