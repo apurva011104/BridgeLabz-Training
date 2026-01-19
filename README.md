@@ -187,3 +187,20 @@ Topics studied- Linear Search and Binary Search, StringBuilder, StringBuffer, 4-
 Problem statement topics- Sorting algorithms, Leetcode questions      
 [Sorting Algorithms Problem Statement Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms)     
 **Leetcode Problem statements link:** [Reverse Linked List](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ReverseLinkedList.java),[Reverse Linked List II](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ReverseLinkedList2.java), [Partition List](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/PartitionList.java)
+
+### - 16 January 2026
+Topics studied: StringBuilder, StringBuffer, FileReader and InputStreamReader in Java        
+Problem statement topics: Linear search and binary search, Leetcode questions           
+[Linear search and Binary Search Problem Statement Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linear-search-and-binary-search)
+**Leetcode Problem statements link:** [Sliding Window Maximum](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SlidingWindowMaximum.java), [3Sum](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ThreeSum.java)
+
+### - 17 January 2026
+Topics studied: Algorithm's Runtime Analysis & Big-O Notation      
+Problem statement topics: StringBuilder, StringBuffer, FileReader and InputStreamReader, Address Book problem (UC1, UC2 and UC3)           
+[StringBuilder, StringBuffer, FileReader and InputStreamReader Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/string-builder-string-buffer-file-reader-input-stream-reader)
+
+## Week 5 (19/January/2026 - 23/January/2026)
+
+### - 19 January 2026
+Topics studied:        
+Problem statement topics:
