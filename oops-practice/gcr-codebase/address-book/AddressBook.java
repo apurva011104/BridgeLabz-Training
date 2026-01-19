@@ -32,6 +32,7 @@ public class AddressBook {
         }
         return null;
     }
+
     /*----------------------UPDATE OPERATIONS------------------------*/
     public void updateContact(Contact contact,String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ){
         try {
@@ -49,5 +50,11 @@ public class AddressBook {
             System.out.println(e);
             System.out.println("Only some of the contact details are updated");
         }
+    }
+    
+    /*----------------------DELETE OPERATIONS------------------------*/
+    public void deleteContact(Contact contact){
+        contacts.remove(contact);
+        System.out.println("Contact removed successfuly");
     }
 }
