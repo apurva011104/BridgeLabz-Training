@@ -2,6 +2,10 @@ public final class ValidationUtils {
 
     private ValidationUtils(){}
 
+    public static boolean validateDetails(String detail){
+        return !(detail==null || detail.trim().isEmpty());
+    }
+
     public static boolean validatePhoneNumber(String phoneNumber){
         if(phoneNumber.length()!=10){
             return false;
