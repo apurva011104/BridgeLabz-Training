@@ -9,28 +9,22 @@ public class Contact{
     private String phoneNumber;
     private String email;
 
-    public Contact(String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) throws InvalidPhoneNumberException, InvalidEmailException, InvalidZIPException{
-        if(!ValidationUtils.validatePhoneNumber(phoneNumber)){
-            throw new InvalidPhoneNumberException("Phone Number must contain 10 digits only");
-        }
-        if(!ValidationUtils.validateEmail(email)){
-            throw new InvalidEmailException("Please enter valid email");
-        }
-        if(!ValidationUtils.validateZIP(zip)){
-            throw new InvalidZIPException("Please enter a valid ZIP code");
-        }
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
+    public Contact(String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) throws InvalidDetailsException {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setAddress(address);
+        setCity(city);
+        setState(state);
+        setZip(zip);
+        setPhoneNumber(phoneNumber);
+        setEmail(email);
     }
 
     //Getters and setters
-    public void setFirstName(String firstName){
+    public void setFirstName(String firstName) throws InvalidDetailsException{
+        if(!ValidationUtils.validateDetails(firstName)){
+            throw new InvalidDetailsException("Invalid first name");
+        }
         this.firstName=firstName;
     }
 
@@ -38,7 +32,10 @@ public class Contact{
         return firstName;
     }
 
-    public void setLastName(String lastName){
+    public void setLastName(String lastName) throws InvalidDetailsException {
+        if(!ValidationUtils.validateDetails(lastName)){
+            throw new InvalidDetailsException("Invalid last name");
+        }
         this.lastName=lastName;
     }
 
@@ -46,15 +43,21 @@ public class Contact{
         return lastName;
     }
 
-    public void setAddress(String address){
+    public void setAddress(String address) throws InvalidDetailsException {
+        if(!ValidationUtils.validateDetails(address)){
+            throw new InvalidDetailsException("Invalid address");
+        }
         this.address = address;
     }
 
-    public String getAddress(){
+    public String getAddress() {
         return address;
     }
 
-    public void setCity(String city){
+    public void setCity(String city)throws InvalidDetailsException {
+        if(!ValidationUtils.validateDetails(city)){
+            throw new InvalidDetailsException("Invalid city");
+        }
         this.city = city;
     }
 
@@ -62,7 +65,10 @@ public class Contact{
         return city;
     }
 
-    public void setState(String state){
+    public void setState(String state) throws InvalidDetailsException {
+        if(!ValidationUtils.validateDetails(state)){
+            throw new InvalidDetailsException("Invalid state");
+        }
         this.state = state;
     }
 
@@ -70,9 +76,9 @@ public class Contact{
         return state;
     }
 
-    public void setZip(String zip) throws InvalidZIPException{
+    public void setZip(String zip) throws InvalidDetailsException {
         if(!ValidationUtils.validateZIP(zip)){
-            throw new InvalidZIPException("Please enter a valid ZIP code");
+            throw new InvalidDetailsException("ZIP code must be 6 digits only");
         }
         this.zip = zip;
     }
@@ -81,9 +87,9 @@ public class Contact{
         return zip;
     }
 
-    public void setPhoneNumber(String phoneNumber) throws InvalidPhoneNumberException{
+    public void setPhoneNumber(String phoneNumber) throws InvalidDetailsException {
         if(!ValidationUtils.validatePhoneNumber(phoneNumber)){
-            throw new InvalidPhoneNumberException("Phone Number must contain 10 digits only");
+            throw new InvalidDetailsException("Phone Number must contain 10 digits only");
         }
         this.phoneNumber = phoneNumber;
     }
@@ -92,9 +98,9 @@ public class Contact{
         return this.phoneNumber;
     }
 
-    public void setEmail(String email) throws InvalidEmailException{
+    public void setEmail(String email) throws InvalidDetailsException{
         if(!ValidationUtils.validateEmail(email)){
-            throw new InvalidEmailException("Please enter valid email");
+            throw new InvalidDetailsException("Please enter valid email");
         }
         this.email = email;
     }
