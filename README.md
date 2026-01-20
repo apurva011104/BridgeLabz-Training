@@ -17,6 +17,7 @@ BridgeLabz-Training
 │   └── scenario-based      
 ├── oops-practice     
 │   ├── gcr-codebase  
+│   │   ├── address-book
 │   │   ├── class-and-object     
 │   │   ├── constructors-variables-and-modifiers     
 │   │   ├── encapsulation-polymorphism-abstraction     
@@ -28,9 +29,12 @@ BridgeLabz-Training
 ├── dsa-practice  
 │   ├── gcr-codebase   
 │   │   ├── hashmap-and-hashfunction    
-│   │   ├── linked-list    
+│   │   ├── linear-search-and-binary-search       
+│   │   ├── linked-list   
+│   │   ├── runtime-analysis     
+│   │   ├── sorting-algorithms     
 │   │   ├── stacks-and-queues     
-│   │   ├── sorting-algorithms    
+│   │   └── string-builder-string-buffer-file-reader-input-stream-reader       
 │   ├── leetcode-codebase      
 │   └── scenario-based                 
 └──README.md
