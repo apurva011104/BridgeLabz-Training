@@ -147,7 +147,7 @@ Problem statement topics: Pillars of OOPs, Scenario-based, Leetcode
 Topics studied- Encapsulation, Interface, Abstract Classes, and Polymorphism in Java     
 Problem statement topics: Pillars of OOPs, Scenario-based, Leetcode        
 [Pillars of OOPs Problem Statement Links](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/encapsulation-polymorphism-abstraction)      
-**Scenario-based Problem statements link: ** [Invoice Generator for Freelancers](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/InvoiceGeneratorForFreelancers.java), [Cafeteria Menu App](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/CafeteriaMenuApp.java), [Student Score Analyzer](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentScoreAnalyzer.java), [Invoice Generator for Freelancers with custom exception](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/InvoiceGeneratorForFreelancers2.java), [Phone Contact Organizer](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/PhoneContactOrganizer.java), [Online Quiz Platform](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/OnlineQuizPlatform.java), [Student Report Generator](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentReportGenerator.java), [Library Management System with custom exception](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/LibraryManagementSystem2.java)    
+**Scenario-based Problem statements link:** [Invoice Generator for Freelancers](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/InvoiceGeneratorForFreelancers.java), [Cafeteria Menu App](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/CafeteriaMenuApp.java), [Student Score Analyzer](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentScoreAnalyzer.java), [Invoice Generator for Freelancers with custom exception](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/InvoiceGeneratorForFreelancers2.java), [Phone Contact Organizer](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/PhoneContactOrganizer.java), [Online Quiz Platform](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/OnlineQuizPlatform.java), [Student Report Generator](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentReportGenerator.java), [Library Management System with custom exception](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/LibraryManagementSystem2.java)    
 **Leetcode problem statements:** [Container with most water](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/leetcode-codebase/ContainerWithMostWater.java), [Climbing stairs](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/leetcode-codebase/ClimbingStairs.java), [Merge two sorted lists](https://github.com/apurva011104/BridgeLabz-Training/blob/oops-practice/oops-practice/leetcode-codebase/MergeTwoSortedLists.java)
 
 ### - 7 January 2026
@@ -191,16 +191,22 @@ Problem statement topics- Sorting algorithms, Leetcode questions
 ### - 16 January 2026
 Topics studied: StringBuilder, StringBuffer, FileReader and InputStreamReader in Java        
 Problem statement topics: Linear search and binary search, Leetcode questions           
-[Linear search and Binary Search Problem Statement Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linear-search-and-binary-search)
+[Linear search and Binary Search Problem Statement Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linear-search-and-binary-search)      
 **Leetcode Problem statements link:** [Sliding Window Maximum](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SlidingWindowMaximum.java), [3Sum](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ThreeSum.java)
 
 ### - 17 January 2026
 Topics studied: Algorithm's Runtime Analysis & Big-O Notation      
-Problem statement topics: StringBuilder, StringBuffer, FileReader and InputStreamReader, Address Book problem (UC1, UC2 and UC3)           
-[StringBuilder, StringBuffer, FileReader and InputStreamReader Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/string-builder-string-buffer-file-reader-input-stream-reader)
+Problem statement topics: StringBuilder, StringBuffer, FileReader and InputStreamReader, Address Book problem           
+[StringBuilder, StringBuffer, FileReader and InputStreamReader Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/string-builder-string-buffer-file-reader-input-stream-reader)    
+[Address Book Problem statement link](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/address-book)     
 
 ## Week 5 (19/January/2026 - 23/January/2026)
 
 ### - 19 January 2026
-Topics studied:        
-Problem statement topics:
+Topics studied: Java generics             
+Problem statement topics: Runtime analysis, Address Book, Leetcode questions     
+[Runtime analysis problem statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/runtime-analysis)     
+[Address Book Problem statement link](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/address-book)     
+**Leetcode Problem Statements:** [Build an array with stack operations](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/BuildAnArrayWithStackOperations.java), [Evaluate Reverse Polish Notation](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/EvaluateReversePolishNotation.java), [Find all numbers disappeared in an array](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/FindAllNumbersDisappearedInAnArray.java)
+
+### - 20 January 2026
