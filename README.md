@@ -17,7 +17,7 @@ BridgeLabz-Training
 │   └── scenario-based      
 ├── oops-practice     
 │   ├── gcr-codebase  
-│   │   ├── address-book
+│   │   ├── address-book    
 │   │   ├── class-and-object     
 │   │   ├── constructors-variables-and-modifiers     
 │   │   ├── encapsulation-polymorphism-abstraction     
