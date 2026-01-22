@@ -214,3 +214,11 @@ Problem statement topics: Runtime analysis, Address Book, Leetcode questions
 **Leetcode Problem Statements:** [Build an array with stack operations](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/BuildAnArrayWithStackOperations.java), [Evaluate Reverse Polish Notation](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/EvaluateReversePolishNotation.java), [Find all numbers disappeared in an array](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/FindAllNumbersDisappearedInAnArray.java)
 
 ### - 20 January 2026
+Topics studied: Java collections framework    
+Problem statement topics: Scenario based problems    
+**Scenario based problem statements:** [Book Shelf](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/book-shelf), [Browser Buddy](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/browser-buddy), [Parcel Tracker](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/parcel-tracker), [Traffic Manager](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/traffic-manager)   
+
+### - 21 January 2026
+Topics Studied: Java Collections Framework    
+Problem statement topics: Java Generics     
+[Java Generics Problem Statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice)
