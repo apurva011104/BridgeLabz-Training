@@ -4,62 +4,64 @@ import java.util.List;
 import java.util.Map;
 
 public class GroupObjectsByProperty {
-    
-    class Employee{
-        String name;
-        String department;
 
-        public Employee(String name, String department) {
-            this.name = name;
-            this.department = department;
+    public static Map<Department, List<Employee>> groupObjects(List<Employee> employees){
+        Map<Department, List<Employee>> group = new HashMap<>();
+        
+        for(Employee e: employees){
+            group.putIfAbsent(e.department, new ArrayList<>());
+            group.get(e.department).add(e);
         }
 
+        return group;
     }
 
-    Map<String, List<Employee>> departments;
-
-    public GroupObjectsByProperty() {
-        this.departments = new HashMap<>();
-    }
-
-    public void addEmployee(String name, String department){
-        department=department.toLowerCase();
-        Employee employee = new Employee(name, department);
-        departments.putIfAbsent(department, new ArrayList<>());
-        departments.get(department).add(employee);
-    }
-
-    public void removeEmployee(Employee e){
-        if(departments.containsKey(e.department)){
-            if(departments.get(e.department).contains(e)){
-                departments.get(e.department).remove(e);
-            }
-        }
-    }
-
-    public String toString(){
-        if(departments.isEmpty()){
-            return "[]";
-        }
-        StringBuilder sb = new StringBuilder();
-        for(Map.Entry<String, List<Employee>> entry: departments.entrySet()){
-            sb.append(entry.getKey()+": [");
+    public static void displayGroup(Map<Department, List<Employee>> group){
+        System.out.println("All employees grouped by their department");
+        for(Map.Entry<Department, List<Employee>> entry: group.entrySet()){
+            System.out.print(entry.getKey().name+": [");
             List<Employee> employees = entry.getValue();
-            for( int i =0; i<employees.size()-1 ;i++){
-                sb.append(employees.get(i).name+", ");
+            for(int i=0; i< employees.size()-1 ; i++){
+                System.out.print(employees.get(i).name+", ");
             }
-            sb.append(employees.get(employees.size()-1).name+"], ");
+            System.out.println(employees.get(employees.size()-1).name+"]");
         }
-        return sb.substring(0,sb.length()-2);
     }
 
     public static void main(String[] args) {
-        GroupObjectsByProperty office = new GroupObjectsByProperty();
+        
+        Department hr = new Department("HR");
+        Department it = new Department("IT");
 
-        office.addEmployee("Alice", "HR");
-        office.addEmployee("Bob", "IT");
-        office.addEmployee("Carol", "HR");
+        Employee employee1 = new Employee("Alice", hr);
+        Employee employee2 = new Employee("Bob", it);
+        Employee employee3 = new Employee("Carol", hr);
 
-        System.out.println(office);
+        List<Employee> employees = new ArrayList<>();
+        employees.add(employee1);
+        employees.add(employee2);
+        employees.add(employee3);
+
+        Map<Department, List<Employee>> grouped = groupObjects(employees);
+        displayGroup(grouped);
     }
+}
+
+class Employee{
+    String name;
+    Department department;
+
+    public Employee(String name, Department department) {
+        this.name = name;
+        this.department = department;
+    }
+}
+
+class Department{
+    String name;
+
+    public Department(String name) {
+        this.name = name;
+    }
+    
 }
