@@ -204,7 +204,7 @@ Problem statement topics: StringBuilder, StringBuffer, FileReader and InputStrea
 [StringBuilder, StringBuffer, FileReader and InputStreamReader Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/string-builder-string-buffer-file-reader-input-stream-reader)    
 [Address Book Problem statement link](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/address-book)     
 
-## Week 5 (19/January/2026 - 23/January/2026)
+## Week 5 (19/January/2026 - 23/January/2026) - Advance Java Programming
 
 ### - 19 January 2026
 Topics studied: Java generics             
@@ -222,3 +222,26 @@ Problem statement topics: Scenario based problems
 Topics Studied: Java Collections Framework    
 Problem statement topics: Java Generics     
 [Java Generics Problem Statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice)
+
+### - 22 January 2026
+Topics studied: Java IO Streams    
+Problem statement topics: Java Collections Framework   
+[Java Collections Framework Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections-framework)
+
+### - 23 January 2026
+Topics Studied: Exceptions Handling in Java     
+Problem statement topics: Java IO Streams   
+[Java IO Streams Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-io-streams)    
+
+## Week 6 (26/January/2026 - 31/January/2026) - Advance Java Programming
+
+### - 26 January 2026 (Holiday due to Republic Day)
+Topics studied: Revision of previous done topics   
+Problem statement topics: Exceptions Handling in Java    
+[Exceptions Handling in Java](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exception-handling)
+
+### - 27 January 2026
+Topics studied: Java Regex, JUnit    
+Problem statement topics: Scenario-based problem statements, Leetcode problem statements    
+**Scenario based problem statements:** [Exam Proctor - Online Exam Review System](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/exam-proctor), [Cinema Time – Movie Schedule Manager](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/cinema-time)     
+**Leetcode Problems Link:** [Number of steps to reduce a number to zero](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/NumberOfStepsToReduceANumberToZero.java), [Swap nodes in pairs](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SwapNodesInPairs.java)    
