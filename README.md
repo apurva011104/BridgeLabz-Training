@@ -244,4 +244,10 @@ Problem statement topics: Exceptions Handling in Java
 Topics studied: Java Regex, JUnit    
 Problem statement topics: Scenario-based problem statements, Leetcode problem statements    
 **Scenario based problem statements:** [Exam Proctor - Online Exam Review System](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/exam-proctor), [Cinema Time – Movie Schedule Manager](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/cinema-time)     
-**Leetcode Problems Link:** [Number of steps to reduce a number to zero](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/NumberOfStepsToReduceANumberToZero.java), [Swap nodes in pairs](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SwapNodesInPairs.java)    
+**Leetcode Problems Link:** [Number of steps to reduce a number to zero](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/NumberOfStepsToReduceANumberToZero.java), [Swap nodes in pairs](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SwapNodesInPairs.java)   
+
+## - 28 January 2026
+Topics studied: JUnit   
+Problem statement topics: Scenario-based problem statements, Leetcode problem statements    
+**Scenario based problem statements:** [Flip Key Logical](https://github.com/apurva011104/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/FlipKeyLogical.java), [File Backup Scheduler](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/file-backup-scheduler), [Restaurant Table Reservation System](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/restaurant-table-reservation-system)      
+**Leetcode Problems Link:** [Count Mentions Per User](https://github.com/apurva011104/BridgeLabz-Training/blob/collections-practice/collections-practice/leetcode-codebase/CountMentionsPerUser.java)
