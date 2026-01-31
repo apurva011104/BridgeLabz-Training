@@ -2,3 +2,4 @@
 *.txt
 *.jpeg
 *.bin
+.vscode/*
