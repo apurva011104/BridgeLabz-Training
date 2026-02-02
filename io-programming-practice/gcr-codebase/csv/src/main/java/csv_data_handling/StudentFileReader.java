@@ -20,11 +20,4 @@ public class StudentFileReader {
             }
         }
     }
-
-    public static void main(String[] args) {
-        try {
-            readStudentFile();
-        } catch (Exception e) {
-        }
-    }
 }
