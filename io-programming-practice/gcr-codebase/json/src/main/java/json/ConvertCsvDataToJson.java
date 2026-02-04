@@ -42,7 +42,8 @@ public class ConvertCsvDataToJson {
             jsonArray.add(jsonObject);
         }
 
-        String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonArray);
+        String jsonString = mapper
+        .writeValueAsString(jsonArray);
         return jsonString;
         
     }

@@ -94,14 +94,17 @@ public class IplAndCensorAnalyzer {
         
     }
 
+    private static void writeJsonFile(String filePath) throws IllegalArgumentException{
+        
+    }
+
     public static void createCensoredFile(String filePath) throws IllegalArgumentException{
 
         if(isCSVFile(filePath)){
             writeCsvFile(filePath);
         }
         else if(isJsonFile(filePath)){
-            
-
+            writeJsonFile(filePath);
         }
         else{
             throw new IllegalArgumentException("Invalid file format");
