@@ -36,7 +36,31 @@ BridgeLabz-Training
 │   │   ├── stacks-and-queues     
 │   │   └── string-builder-string-buffer-file-reader-input-stream-reader       
 │   ├── leetcode-codebase      
-│   └── scenario-based                 
+│   └── scenario-based        
+├── collections-practice       
+|   ├── gcr-codebase   
+│   │   ├── collections-framework     
+│   │   ├── exception-handling    
+│   │   ├── java-annotations     
+│   │   ├── java-generics     
+│   │   ├── java-io-streams   
+│   │   ├── java-reflection     
+│   │   ├── java-regex     
+│   │   └── junit  
+|   ├── leetcode-codebase    
+|   └── scenario-based      
+├── io-programming-practice       
+|   ├── gcr-codebase   
+|   |   ├── csv   
+│   │   └── json       
+|   ├── leetcode-codebase    
+|   └── scenario-based      
+├── java8-features-practice      
+|   ├── gcr-codebase    
+|   |   ├── lambda-expressions   
+│   │   └── functional-interfaces   
+|   ├── leetcode-codebase    
+|   └── scenario-based      
 └──README.md
 
 ## Week 1 (17/December/2025 - 21/December/2025): Getting Started with Git and Basics of Programming Using Java
@@ -233,7 +257,7 @@ Topics Studied: Exceptions Handling in Java
 Problem statement topics: Java IO Streams   
 [Java IO Streams Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-io-streams)    
 
-## Week 6 (26/January/2026 - 31/January/2026) - Advance Java Programming
+## Week 6 (26/January/2026 - 30/January/2026) - Advance Java Programming
 
 ### - 26 January 2026 (Holiday due to Republic Day)
 Topics studied: Revision of previous done topics   
@@ -248,6 +272,40 @@ Problem statement topics: Scenario-based problem statements, Leetcode problem st
 
 ## - 28 January 2026
 Topics studied: JUnit   
-Problem statement topics: Scenario-based problem statements, Leetcode problem statements    
+Problem statement topics: Scenario-based problem statements, Leetcode problem statements, Java Regex    
+[Java Regex Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-regex)       
 **Scenario based problem statements:** [Flip Key Logical](https://github.com/apurva011104/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/FlipKeyLogical.java), [File Backup Scheduler](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/file-backup-scheduler), [Restaurant Table Reservation System](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/restaurant-table-reservation-system)      
 **Leetcode Problems Link:** [Count Mentions Per User](https://github.com/apurva011104/BridgeLabz-Training/blob/collections-practice/collections-practice/leetcode-codebase/CountMentionsPerUser.java)
+
+## - 29 January 2026
+Topics studied: Junit, Annotations in Java       
+Problem statement topics: Java Regex, Junit     
+[Java Regex Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-regex), [Junit Problem statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/junit)       
+
+
+## - 30 January 2026
+Topics studied: Annotations and Reflection API in Java       
+Problem statement topics: Junit, Scenario-based problem statements     
+[Junit Problem statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/junit)    
+**Scenario based problem statements:** [Future Logistics](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/future-logistics)
+
+## Week 7 (2/Feburary/2026 - 7/Feburary/2026) 
+
+## - 2 Feburary 2026
+Topics studied: Annotations and Reflection API in Java, CSV data and file handling       
+Problem statement topics: Java Annotations, Java Reflections, Scenario-based problem statements     
+[Java Reflections Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-reflection), [Java Annotations Problem statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-annotations)    
+**Scenario based problem statements:** [AeroVigil](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/aerovigil)      
+
+## - 3 Feburary 2026
+Topics studied: CSV data and file handling, JSON data and file handling   
+Problem statement topics: CSV data and file handling, Scenario-based problem statements     
+[CSV Data and File Handling Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/csv)       
+**Scenario based problem statements:** [Stream Buzz](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/stream-buzz), [Factory Robot Hazard Analyzer](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/factory-robot-hazard-analyzer)      
+
+## - 4 Feburary 2026
+Topics studied: JSON data and file handling, Java Lambda Expressions     
+Problem statement topics: JSON data and file handling, Java Lambda Expressions     
+[JSON Data and File Handling Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/json), [Java Lambda Expressions Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/lambda-expressions)     
+
+## - 5 Feburary 2026
