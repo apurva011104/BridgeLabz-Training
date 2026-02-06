@@ -35,10 +35,10 @@ interface SecurityUtils{
             if(Character.isDigit(ch)){
                 containsDigit = true;
             }
-            else if(ch>='a' && ch<='z'){
+            else if(Character.isLowerCase(ch)){
                 containsLowercaseLetter = true;
             }
-            else if(ch>='A' && ch<='Z'){
+            else if(Character.isUpperCase(ch)){
                 containsUppercaseLetter = true;
             }
             else if (!Character.isLetterOrDigit(ch) && ch!=' '){
