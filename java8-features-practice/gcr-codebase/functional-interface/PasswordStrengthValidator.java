@@ -38,7 +38,7 @@ interface SecurityUtils{
             else if(ch>='a' && ch<='z'){
                 containsLowercaseLetter = true;
             }
-            else if(ch>='A' & ch<='Z'){
+            else if(ch>='A' && ch<='Z'){
                 containsUppercaseLetter = true;
             }
             else if (!Character.isLetterOrDigit(ch) && ch!=' '){
