@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -8,11 +7,11 @@ public class OrderRevenueSummary {
 
     public static void summarizeOrderRevenue(List<Order> orders){
 
-        Map<Customer, DoubleSummaryStatistics> summary = orders.stream()
-                                                .collect(Collectors.groupingBy(order -> order.customer , Collectors.summarizingDouble(order -> order.price)));
+        Map<Customer, Double> summary = orders.stream()
+                                                .collect(Collectors.groupingBy(order -> order.customer , Collectors.summingDouble(order -> order.price)));
 
-        for( Map.Entry<Customer, DoubleSummaryStatistics> entry: summary.entrySet()){
-            System.out.println("Customer: "+entry.getKey().name+", Price to pay: "+entry.getValue().getSum()+" INR");
+        for( Map.Entry<Customer, Double> entry: summary.entrySet()){
+            System.out.println("Customer: "+entry.getKey().name+", Price to pay: "+entry.getValue()+" INR");
         }
     }
     
