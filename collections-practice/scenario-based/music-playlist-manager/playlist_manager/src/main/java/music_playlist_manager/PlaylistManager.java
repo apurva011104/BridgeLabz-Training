@@ -1,19 +1,22 @@
 package music_playlist_manager;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.Stack;
+import java.util.logging.Logger;
 
 public class PlaylistManager {
     
+    private static final Logger LOGGER = java.util.logging.Logger.getLogger(PlaylistManager.class.getName());
     private static final String PLAYLIST_NOT_FOUND = "No such playlist found.";
     private static final String INVALID_PLAYLIST_NAME = "Invalid playlist name";
     private final Set<Playlist> playlists;
-    private final Stack<Song> recentlyPlayed;
+    private final Deque<Song> recentlyPlayed;
 
     public PlaylistManager() {
         this.playlists = new LinkedHashSet<>();
-        this.recentlyPlayed = new Stack<>();
+        this.recentlyPlayed = new ArrayDeque<>();
     }
 
     private Playlist playlistNameExists(String name){
@@ -30,7 +33,7 @@ public class PlaylistManager {
             throw new IllegalArgumentException(INVALID_PLAYLIST_NAME);
         }
         if(playlistNameExists(name) != null){
-            System.err.println("Playlist with this name already exists");
+            LOGGER.warning("Playlist with this name already exists");
             return false;
         }
         Playlist playlist = new Playlist(name);
@@ -44,7 +47,7 @@ public class PlaylistManager {
         }
         Playlist playlist = playlistNameExists(name);
         if(playlist == null){
-            System.err.println("No such playlist found");
+            LOGGER.warning("No such playlist found");
             return false; 
         }
 
@@ -68,7 +71,7 @@ public class PlaylistManager {
             return true;
         } 
         catch (SongAlreadyExistsException e) {
-            System.err.println(e.getMessage());
+            LOGGER.warning(e.getMessage());
             return false;
         }
     }
@@ -89,7 +92,7 @@ public class PlaylistManager {
             return true;
         } 
         catch (IllegalArgumentException e) {
-            System.err.println(e.getMessage());
+            LOGGER.warning(e.getMessage());
             return false;
         }
     }
@@ -103,15 +106,10 @@ public class PlaylistManager {
             throw new IllegalArgumentException(PLAYLIST_NOT_FOUND);
         }
         for(Song song: playlist.getSongs()){
-            System.err.println("Currently playing: "+song);
+            String songInfo = "Currently playing: "+song;
+            LOGGER.info(songInfo);
             for(int i=0; i<=song.getDurationInSeconds(); i++);
             recentlyPlayed.push(song);
-            try {
-                Thread.sleep(100);
-            } 
-            catch (InterruptedException e) {
-                System.err.println("Playback interrupted");
-            }
 
         }
     }

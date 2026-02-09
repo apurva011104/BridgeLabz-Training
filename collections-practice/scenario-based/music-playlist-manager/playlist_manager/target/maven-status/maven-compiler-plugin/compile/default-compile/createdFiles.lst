@@ -1,5 +1,0 @@
-music_playlist_manager\MusicApplication.class
-music_playlist_manager\Playlist.class
-music_playlist_manager\PlaylistManager.class
-music_playlist_manager\SongAlreadyExistsException.class
-music_playlist_manager\Song.class

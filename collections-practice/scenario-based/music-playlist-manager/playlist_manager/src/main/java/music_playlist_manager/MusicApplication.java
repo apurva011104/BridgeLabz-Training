@@ -16,19 +16,20 @@ public class MusicApplication {
 
         PlaylistManager manager = new PlaylistManager();
 
-        manager.createPlaylist("Blackpink songs");
-        manager.addSong("Blackpink songs",song1);
-        manager.addSong("Blackpink songs",song2);
-        manager.addSong("Blackpink songs",song3);
-        manager.addSong("Blackpink songs",song4);
-        manager.addSong("Blackpink songs",song5);
-        manager.addSong("Blackpink songs",song6);
-        manager.addSong("Blackpink songs",song7);
-        manager.addSong("Blackpink songs",song8);
-        manager.addSong("Blackpink songs",song9);
-        manager.addSong("Blackpink songs",song10);
+        String playlistName  = "Liked Songs";
+        manager.createPlaylist(playlistName);
+        manager.addSong(playlistName  , song1);
+        manager.addSong(playlistName  , song2);
+        manager.addSong(playlistName  , song3);
+        manager.addSong(playlistName  , song4);
+        manager.addSong(playlistName  , song5);
+        manager.addSong(playlistName  , song6);
+        manager.addSong(playlistName  , song7);
+        manager.addSong(playlistName  , song8);
+        manager.addSong(playlistName  , song9);
+        manager.addSong(playlistName  , song10);
 
-        manager.startPlaylist("Blackpink songs");
+        manager.startPlaylist(playlistName  );
         
     }
 }
