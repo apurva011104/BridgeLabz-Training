@@ -3,10 +3,20 @@ import java.util.List;
 
 public class AddressBook {
 
+    private String name;
     private final List<Contact> contacts;
 
-    public AddressBook() {
+    public AddressBook(String name) {
+        this.name = name;
         this.contacts = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     /*------------------------------CREATE OPERATIONS-------------------------------------*/
@@ -17,8 +27,7 @@ public class AddressBook {
             System.out.println("Contact added successfully");
         } 
         catch (InvalidDetailsException e) {
-            System.out.print("Unable to add contact. ");
-            System.out.println(e);
+            System.out.println("Unable to add contact. "+e.getMessage());
         }
     }
     
@@ -36,6 +45,7 @@ public class AddressBook {
     /*----------------------UPDATE OPERATIONS------------------------*/
     public void updateContact(Contact contact,String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ){
         try {
+            new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
             contact.setFirstName(firstName);
             contact.setLastName(lastName);
             contact.setAddress(address);
@@ -47,8 +57,7 @@ public class AddressBook {
             System.out.println("Contact updated successfully.");
         } 
         catch (InvalidDetailsException e) {
-            System.out.println(e);
-            System.out.println("Only some of the contact details are updated");
+            System.out.println("Invalid contact details");
         }
     }
     
@@ -57,4 +66,5 @@ public class AddressBook {
         contacts.remove(contact);
         System.out.println("Contact removed successfuly");
     }
+
 }

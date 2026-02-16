@@ -5,12 +5,29 @@ public class AddressBookMain {
     private static final Scanner SCANNER = new Scanner(System.in);
     private final AddressBook addressBook;
 
-    public AddressBookMain() {
-        addressBook = new AddressBook();
+    public AddressBookMain(AddressBook addressBook) {
+        this.addressBook = addressBook;
     }
     
 
     /*------------------------------CREATE OPERATIONS-------------------------------------*/
+    public void addMultipleContacts(){
+        boolean flag = true;
+        while(flag){
+            System.out.print("Do you want to add new contact? Enter 'yes' or 'no': ");
+            String userChoice = SCANNER.nextLine().trim();
+            if(userChoice.equalsIgnoreCase("yes")){
+                addContact();
+            }
+            else if (userChoice.equalsIgnoreCase("no")) {
+                flag=false;          
+            }
+            else{
+                System.out.println("Invalid choice!");
+            }
+        }
+    }
+
     public void addContact(){
         System.out.print("Enter first name: ");
         String firstName = SCANNER.nextLine().trim();
@@ -34,7 +51,7 @@ public class AddressBookMain {
     /*-----------------------UPDATE OPERATIONS---------------------------*/
     public void updateContact() throws InvalidContactException{
         System.out.print("Enter full name of the contact you want to update: ");
-        String name = SCANNER.nextLine();
+        String name = SCANNER.nextLine().trim().replaceAll("\\s+"," ");
         Contact contact = addressBook.searchContact(name);
         if(contact == null){
             throw new InvalidContactException("No such contact found in the address book");
@@ -78,7 +95,7 @@ public class AddressBookMain {
 
     /*--------------------------DELETE OPERATIONS-------------------------*/
     public void deleteContact() throws InvalidContactException{
-        System.out.print("Enter full name of the contact you want to update: ");
+        System.out.print("Enter full name of the contact you want to delete: ");
         String name = SCANNER.nextLine();
         Contact contact = addressBook.searchContact(name);
         if(contact == null){
