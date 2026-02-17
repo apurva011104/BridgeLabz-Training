@@ -3,7 +3,7 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 import com.bridgelabz.model.Employee;
-import com.bridgelabz.service.EmployeeService;
+import com.bridgelabz.service.EmployeeWageBuilder;
 
 public class UserInterface{
     public static void main(String [] args){
@@ -16,12 +16,12 @@ public class UserInterface{
         String name = scanner.nextLine().trim().replaceAll("\\s+", " ");;
 
         Employee employee = new Employee(id, name);
-        
-        EmployeeService service = new EmployeeService();
 
-        double dailyWage = service.calculateMonthlyWage(employee);
+
+        EmployeeWageBuilder employeeWageBuilder = new EmployeeWageBuilder(20, 8, 4, 20, 100);
+
+        double dailyWage = employeeWageBuilder.calculateMonthlyWage();
 
         System.out.printf("Monthly wage: %.2f INR%n", dailyWage);
-
     }
 }
