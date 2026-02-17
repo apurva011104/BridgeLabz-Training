@@ -1,14 +1,16 @@
 package com.bridgelabz.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.bridgelabz.model.Company;
 
 public class EmployeeWageBuilder implements EmpWagebuilderInterface{
 
-    private CompanyEmpWage[] companyEmpWages;
-    private int size=0;
+    private final List<CompanyEmpWage> companyEmpWages;
 
     public EmployeeWageBuilder() {
-        this.companyEmpWages = new CompanyEmpWage[5];
+        this.companyEmpWages = new ArrayList<>();
     }
 
     @Override
@@ -16,23 +18,10 @@ public class EmployeeWageBuilder implements EmpWagebuilderInterface{
         if(companyEmpWage==null){
             throw new IllegalArgumentException("CompanyEmpWage cannot be null.");
         }
-        if(size==companyEmpWages.length){
-            resize();
-        }
-        companyEmpWages[size] = companyEmpWage;
-        size++;
+        companyEmpWages.add(companyEmpWage);
     }
 
-    private void resize(){
-        CompanyEmpWage[] newCompanyEmpWages = new CompanyEmpWage[2 * this.companyEmpWages.length];
-        for(int i=0 ; i<companyEmpWages.length ; i++){
-            newCompanyEmpWages[i] = this.companyEmpWages[i];
-        }
-        this.companyEmpWages = newCompanyEmpWages;
-    }
-
-
-    public int checkAttendance(){
+    private int checkAttendance(){
         return (int)(Math.random()*3);
     }
 
@@ -73,11 +62,8 @@ public class EmployeeWageBuilder implements EmpWagebuilderInterface{
 
     @Override
     public void calculateAllWages(){
-        for(int i=0; i<size ; i++){
-            CompanyEmpWage companyEmpWage = companyEmpWages[i];
-
+        for(CompanyEmpWage companyEmpWage: companyEmpWages){
             double totalWage = calculateMonthlyWage(companyEmpWage.getCompany());
-
             companyEmpWage.setTotalWage(totalWage);
         }
     }
