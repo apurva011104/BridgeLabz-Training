@@ -14,7 +14,22 @@ public class EmployeeService{
 
     public double calculateDailyWage(Employee employee){
         int attendance = checkAttendance(employee);
-        double workingHours = attendance==0 ? 0.0 : (attendance==1 ? PART_TIME_HOUR : FULL_DAY_HOUR );
+        double workingHours;
+
+        switch (attendance) {
+            case 0:
+                workingHours = 0.0;
+                break;
+            case 1:
+                workingHours = PART_TIME_HOUR;
+                break;
+            case 2:
+                workingHours = FULL_DAY_HOUR;
+                break;
+            default:
+                throw new IllegalArgumentException("Error while fetching attendance");
+        }
+
         return WAGE_PER_HOUR * workingHours;
 
     }
