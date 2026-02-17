@@ -4,23 +4,38 @@ import com.bridgelabz.model.Company;
 
 public class EmployeeWageBuilder {
 
-    private final Company company;
-    private double totalWage;
+    private CompanyEmpWage[] companyEmpWages;
+    private int size=0;
 
-    public EmployeeWageBuilder(Company company) {
-        this.company = company;
-        this.totalWage = calculateMonthlyWage();
+    public EmployeeWageBuilder() {
+        this.companyEmpWages = new CompanyEmpWage[5];
     }
 
-    public double getTotalWage() {
-        return totalWage;
+    public void addCompanyEmpWage(CompanyEmpWage companyEmpWage){
+        if(companyEmpWage==null){
+            throw new IllegalArgumentException("CompanyEmpWage cannot be null.");
+        }
+        if(size==companyEmpWages.length){
+            resize();
+        }
+        companyEmpWages[size] = companyEmpWage;
+        size++;
     }
+
+    private void resize(){
+        CompanyEmpWage[] newCompanyEmpWages = new CompanyEmpWage[2 * this.companyEmpWages.length];
+        for(int i=0 ; i<companyEmpWages.length ; i++){
+            newCompanyEmpWages[i] = this.companyEmpWages[i];
+        }
+        this.companyEmpWages = newCompanyEmpWages;
+    }
+
 
     public int checkAttendance(){
         return (int)(Math.random()*3);
     }
 
-    private double workingHours(){
+    private double workingHours(Company company){
         int attendance = checkAttendance();
         switch (attendance) {
             case 0:
@@ -34,7 +49,7 @@ public class EmployeeWageBuilder {
         }
     }
     
-    private double calculateMonthlyWage(){
+    private double calculateMonthlyWage(Company company){
 
         int maximumWorkingDaysPerMonth = company.getWorkingDaysPerMonth();
         double maximumWorkingHoursPerMonth = company.getWorkingHoursPerMonth();
@@ -45,7 +60,7 @@ public class EmployeeWageBuilder {
         double workingHours = 0;
         
         while(numberOfDays < maximumWorkingDaysPerMonth  && workingHours < maximumWorkingHoursPerMonth){
-            double workingHoursPerDay = workingHours();
+            double workingHoursPerDay = workingHours(company);
             monthlyWage += workingHoursPerDay * wagePerHour;
             workingHours+=workingHoursPerDay;
             numberOfDays++;
@@ -53,6 +68,16 @@ public class EmployeeWageBuilder {
 
         return monthlyWage;
 
+    }
+
+    public void calculateAllWages(){
+        for(int i=0; i<size ; i++){
+            CompanyEmpWage companyEmpWage = companyEmpWages[i];
+
+            double totalWage = calculateMonthlyWage(companyEmpWage.getCompany());
+
+            companyEmpWage.setTotalWage(totalWage);
+        }
     }
 
 }
