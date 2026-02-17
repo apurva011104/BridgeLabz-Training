@@ -10,18 +10,18 @@ public class UserInterface{
         System.out.println("Welcome to employee wage computation program");
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter employee id: ");
+        System.out.print("Enter employee id: ");
         String id = scanner.nextLine().trim().replaceAll("\\s+", " ");
-        System.out.println("Enter employee name: ");
+        System.out.print("Enter employee name: ");
         String name = scanner.nextLine().trim().replaceAll("\\s+", " ");;
 
         Employee employee = new Employee(id, name);
         
         EmployeeService service = new EmployeeService();
 
-        boolean isPresent = service.checkAttendance(employee);
+        double dailyWage = service.calculateDailyWage(employee);
 
-        System.out.println("Employee is "+(isPresent?"present":"absent"));
+        System.out.printf("Daily wage: %.2f INR%n", dailyWage);
 
     }
 }
