@@ -39,19 +39,22 @@ public class EmployeeWageBuilder implements EmpWagebuilderInterface{
         }
     }
     
-    private double calculateMonthlyWage(Company company){
+    private double calculateMonthlyWage(CompanyEmpWage companyEmpWage){
 
-        int maximumWorkingDaysPerMonth = company.getWorkingDaysPerMonth();
-        double maximumWorkingHoursPerMonth = company.getWorkingHoursPerMonth();
-        double wagePerHour = company.getWagePerHour();
+        List<Double> dailyWages = companyEmpWage.getDailyWages();
+        dailyWages.clear();
 
+        Company company = companyEmpWage.getCompany();
+        
         double monthlyWage = 0.0;
         int numberOfDays = 0;
         double workingHours = 0;
         
-        while(numberOfDays < maximumWorkingDaysPerMonth  && workingHours < maximumWorkingHoursPerMonth){
+        while(numberOfDays < company.getWorkingDaysPerMonth() && workingHours < company.getWorkingHoursPerMonth()){
             double workingHoursPerDay = workingHours(company);
-            monthlyWage += workingHoursPerDay * wagePerHour;
+            double dailyWage = workingHoursPerDay * company.getWagePerHour();
+            dailyWages.add(dailyWage);
+            monthlyWage += dailyWage;
             workingHours+=workingHoursPerDay;
             numberOfDays++;
         }
@@ -63,7 +66,7 @@ public class EmployeeWageBuilder implements EmpWagebuilderInterface{
     @Override
     public void calculateAllWages(){
         for(CompanyEmpWage companyEmpWage: companyEmpWages){
-            double totalWage = calculateMonthlyWage(companyEmpWage.getCompany());
+            double totalWage = calculateMonthlyWage(companyEmpWage);
             companyEmpWage.setTotalWage(totalWage);
         }
     }
