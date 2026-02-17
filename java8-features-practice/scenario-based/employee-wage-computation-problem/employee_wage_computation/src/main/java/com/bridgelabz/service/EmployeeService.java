@@ -4,22 +4,18 @@ import com.bridgelabz.model.Employee;
 
 public class EmployeeService{
 
-    private static double WAGE_PER_HOUR = 20.0;
-    private static double FULL_DAY_HOUR = 8.0;
+    private static final double WAGE_PER_HOUR = 20.0;
+    private static final double FULL_DAY_HOUR = 8.0;
+    private static final double PART_TIME_HOUR = 4.0;
     
-    public boolean checkAttendance(Employee employee){
-        int attendance = (int)(Math.random()*2);
-        if(attendance==0){
-            return false;
-        }
-        else{
-            return true;
-        }
+    public int checkAttendance(Employee employee){
+        return (int)(Math.random()*3);
     }
 
     public double calculateDailyWage(Employee employee){
-        boolean isPresent = checkAttendance(employee);
-        return isPresent ? (WAGE_PER_HOUR * FULL_DAY_HOUR) : 0.0;
+        int attendance = checkAttendance(employee);
+        double workingHours = attendance==0 ? 0.0 : (attendance==1 ? PART_TIME_HOUR : FULL_DAY_HOUR );
+        return WAGE_PER_HOUR * workingHours;
 
     }
 }
