@@ -14,11 +14,11 @@ public class EmployeeWageBuilder implements EmpWagebuilderInterface{
     }
 
     @Override
-    public void addCompanyEmpWage(CompanyEmpWage companyEmpWage){
-        if(companyEmpWage==null){
+    public void addCompanyEmpWage(Company company){
+        if(company==null){
             throw new IllegalArgumentException("CompanyEmpWage cannot be null.");
         }
-        companyEmpWages.add(companyEmpWage);
+        companyEmpWages.add(new CompanyEmpWage(company));
     }
 
     private int checkAttendance(){
@@ -70,5 +70,21 @@ public class EmployeeWageBuilder implements EmpWagebuilderInterface{
             companyEmpWage.setTotalWage(totalWage);
         }
     }
+
+    @Override
+    public double getTotalWage(Company company){
+        CompanyEmpWage found = null;
+        for(CompanyEmpWage companyEmpWage: companyEmpWages){
+            if(companyEmpWage.getCompany().equals(company)){
+                found = companyEmpWage;
+                break;
+            }
+        }
+        if(found==null){
+            throw new IllegalArgumentException("No such company found in the record.");
+        }
+        return found.getTotalWage();
+    }
+
 
 }

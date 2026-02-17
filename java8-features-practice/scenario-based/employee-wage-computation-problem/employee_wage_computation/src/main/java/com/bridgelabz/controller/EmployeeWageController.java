@@ -1,6 +1,6 @@
 package com.bridgelabz.controller;
 
-import com.bridgelabz.service.CompanyEmpWage;
+import com.bridgelabz.model.Company;
 import com.bridgelabz.service.EmpWagebuilderInterface;
 
 public class EmployeeWageController {
@@ -11,11 +11,15 @@ public class EmployeeWageController {
         this.wageBuilder = wageBuilder;
     }
 
-    public void addCompany(CompanyEmpWage companyEmpWage) {
-        wageBuilder.addCompanyEmpWage(companyEmpWage);
+    public void addCompany(Company company) {
+        wageBuilder.addCompanyEmpWage(company);
     }
 
     public void computeWages() {
         wageBuilder.calculateAllWages();
+    }
+
+    public double getTotalWage(Company company){
+        return wageBuilder.getTotalWage(company);
     }
 }

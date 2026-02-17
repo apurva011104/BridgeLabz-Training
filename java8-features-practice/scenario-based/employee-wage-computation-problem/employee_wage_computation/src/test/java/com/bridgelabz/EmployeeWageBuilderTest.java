@@ -19,7 +19,7 @@ public class EmployeeWageBuilderTest {
         this.company = new Company("Company1" , 20, 8, 4, 20, 100);
         this.companyEmpWage = new CompanyEmpWage(company);
         this.empWagebuilder = new EmployeeWageBuilder();
-        empWagebuilder.addCompanyEmpWage(companyEmpWage);
+        empWagebuilder.addCompanyEmpWage(company);
     }
 
     @Test
