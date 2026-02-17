@@ -8,6 +8,7 @@ public class EmployeeService{
     private static final double FULL_DAY_HOUR = 8.0;
     private static final double PART_TIME_HOUR = 4.0;
     private static final int WORKING_DAYS_PER_MONTH = 20;
+    private static final double WORKING_HOURS_PER_MONTH = 100;
     
     public int checkAttendance(){
         return (int)(Math.random()*3);
@@ -29,10 +30,14 @@ public class EmployeeService{
     
     public double calculateMonthlyWage(Employee employee){
         double monthlyWage = 0.0;
+        int numberOfDays = 0;
+        double workingHours = 0;
         
-        for(int i=0 ; i<WORKING_DAYS_PER_MONTH ; i++){
-            double workingHours = workingHours();
-            monthlyWage += workingHours * WAGE_PER_HOUR;
+        while(numberOfDays < WORKING_DAYS_PER_MONTH && workingHours < WORKING_HOURS_PER_MONTH){
+            double workingHoursPerDay = workingHours();
+            monthlyWage += workingHoursPerDay * WAGE_PER_HOUR;
+            workingHours+=workingHoursPerDay;
+            numberOfDays++;
         }
 
         return monthlyWage;
