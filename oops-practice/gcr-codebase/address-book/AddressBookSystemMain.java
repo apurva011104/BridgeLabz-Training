@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class AddressBookSystemMain {
@@ -28,6 +29,20 @@ public class AddressBookSystemMain {
             throw new InvalidAddressBookException("No such address book exists.");
         }
         return addressBook;
+    }
+
+    public void searchContactsAcrossCityOrState(){
+        System.out.print("Enter the name of city or state: ");
+        String keyword = SCANNER.nextLine().trim().replaceAll("\\s+", " ");
+        List<Contact> searchResults = addressBookSystem.searchPersonsAcrossCityOrState(keyword);
+        if(searchResults.isEmpty()){
+            System.out.println("No contacts found");
+            return;
+        }
+        System.out.println("Search results: ");
+        for(Contact contact: searchResults){
+            System.out.println(contact);
+        }
     }
     
 }

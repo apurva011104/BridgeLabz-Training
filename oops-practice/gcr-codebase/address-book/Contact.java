@@ -117,7 +117,13 @@ public class Contact{
         Contact anotherContact = (Contact) obj;
         return anotherContact.firstName.equalsIgnoreCase(this.firstName) && anotherContact.lastName.equalsIgnoreCase(lastName);
     }
-    
 
+    @Override
+    public String toString() {
+        return String.format("First name: %s, Last name: %s, Address: %s, City: %s, State: %s, ZIP code: %s, Phone number: %s, Email: %s"
+                                        ,firstName,lastName, address, city, state, zip, phoneNumber, email);
+    }
+    
+    
     
 }

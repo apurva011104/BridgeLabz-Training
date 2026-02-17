@@ -56,7 +56,8 @@ public class Main {
         while(flag){
             System.out.println("Enter '1' to add new address book.");
             System.out.println("Enter '2' to open a address book.");
-            System.out.println("Enter '3' to exit the program.");
+            System.out.println("Enter '3' to search contacts across city or state.");
+            System.out.println("Enter '4' to exit the program.");
             System.out.print("Enter your choice: ");
             String input = SCANNER.nextLine().trim();
 
@@ -74,6 +75,9 @@ public class Main {
                     }
                     break;
                 case "3":
+                    addressBookSystemMain.searchContactsAcrossCityOrState();
+                    break;
+                case "4":
                     flag = false;
                     System.out.println("Exiting the program...");
                     break;

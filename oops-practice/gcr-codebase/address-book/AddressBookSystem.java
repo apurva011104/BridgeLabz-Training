@@ -1,5 +1,7 @@
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class AddressBookSystem {
@@ -35,5 +37,15 @@ public class AddressBookSystem {
             }
         }
         return true;
+    }
+
+    public List<Contact> searchPersonsAcrossCityOrState(String keyword){
+        List<Contact> searchResults = new ArrayList<>();
+        for(Map.Entry<String,AddressBook> entry: addressBooks.entrySet()){
+            AddressBook addressBook = entry.getValue();
+            List<Contact> found = addressBook.searchContactAcrossCityOrState(keyword);
+            searchResults.addAll(found);
+        }
+        return searchResults;
     }
 }

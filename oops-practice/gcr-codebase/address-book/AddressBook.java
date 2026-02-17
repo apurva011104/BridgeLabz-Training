@@ -50,6 +50,16 @@ public class AddressBook {
         return null;
     }
 
+    public List<Contact> searchContactAcrossCityOrState(String keyword){
+        List<Contact> foundContacts = new ArrayList<>();
+        for(Contact contact: contacts){
+            if(contact.getCity().equalsIgnoreCase(keyword) || contact.getState().equalsIgnoreCase(keyword)){
+                foundContacts.add(contact);
+            }
+        }
+        return foundContacts;
+    }
+
     /*----------------------UPDATE OPERATIONS------------------------*/
     public void updateContact(Contact contact,String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ) throws DuplicateContactException, InvalidDetailsException{
 
@@ -73,5 +83,6 @@ public class AddressBook {
         contacts.remove(contact);
         System.out.println("Contact removed successfuly");
     }
+
 
 }
