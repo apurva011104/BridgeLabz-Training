@@ -1,3 +1,5 @@
 *.class
 *.csv
 *.json
+target/
+*.log
