@@ -45,7 +45,12 @@ public class AddressBookMain {
         String phoneNumber = SCANNER.nextLine().trim();
         System.out.print("Enter email id: ");
         String email= SCANNER.nextLine().trim();
-        addressBook.addContact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+        try {
+            addressBook.addContact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+        } 
+        catch (InvalidDetailsException | DuplicateContactException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     /*-----------------------UPDATE OPERATIONS---------------------------*/
@@ -89,7 +94,13 @@ public class AddressBookMain {
         String email= SCANNER.nextLine();
         email = email.length()==0? contact.getEmail() : email;
 
-        addressBook.updateContact(contact, firstName, lastName, address, city, state, zip, phoneNumber, email);
+        try {
+            addressBook.updateContact(contact, firstName, lastName, address, city, state, zip, phoneNumber, email);
+        } 
+        catch (InvalidDetailsException | DuplicateContactException e) {
+            System.out.println(e.getMessage());
+        }
+        
         
     }
 

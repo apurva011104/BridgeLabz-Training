@@ -19,16 +19,24 @@ public class AddressBook {
         this.name = name;
     }
 
-    /*------------------------------CREATE OPERATIONS-------------------------------------*/
-    public void addContact(String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ){
-        try {
-            Contact contact = new Contact(firstName,lastName,address,city,state,zip,phoneNumber,email);
-            contacts.add(contact);
-            System.out.println("Contact added successfully");
-        } 
-        catch (InvalidDetailsException e) {
-            System.out.println("Unable to add contact. "+e.getMessage());
+    private boolean isDuplicate(Contact contact, Contact currentContact){
+        for(Contact c : contacts){
+            if(c.equals(contact) && c != currentContact){
+                return true;
+            }
         }
+        return false;
+    }
+
+    /*------------------------------CREATE OPERATIONS-------------------------------------*/
+    public void addContact(String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ) throws DuplicateContactException, InvalidDetailsException{
+  
+        Contact contact = new Contact(firstName,lastName,address,city,state,zip,phoneNumber,email);
+        if(contacts.contains(contact)){
+            throw new DuplicateContactException("Contact name already exists");
+        }
+        contacts.add(contact);
+        System.out.println("Contact added successfully");
     }
     
     /*----------------------READ OPERATIONS--------------------------*/
@@ -43,22 +51,21 @@ public class AddressBook {
     }
 
     /*----------------------UPDATE OPERATIONS------------------------*/
-    public void updateContact(Contact contact,String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ){
-        try {
-            new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
-            contact.setFirstName(firstName);
-            contact.setLastName(lastName);
-            contact.setAddress(address);
-            contact.setCity(city);
-            contact.setState(state);
-            contact.setZip(zip);
-            contact.setPhoneNumber(phoneNumber);
-            contact.setEmail(email);
-            System.out.println("Contact updated successfully.");
-        } 
-        catch (InvalidDetailsException e) {
-            System.out.println("Invalid contact details");
+    public void updateContact(Contact contact,String firstName , String lastName, String address , String city , String state, String zip, String phoneNumber , String email ) throws DuplicateContactException, InvalidDetailsException{
+
+        Contact temp = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
+        if(isDuplicate(temp, contact)){
+            throw new DuplicateContactException("Contact name already exists");
         }
+        contact.setFirstName(firstName);
+        contact.setLastName(lastName);
+        contact.setAddress(address);
+        contact.setCity(city);
+        contact.setState(state);
+        contact.setZip(zip);
+        contact.setPhoneNumber(phoneNumber);
+        contact.setEmail(email);
+        System.out.println("Contact updated successfully.");
     }
     
     /*----------------------DELETE OPERATIONS------------------------*/

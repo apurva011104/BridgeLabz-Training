@@ -108,6 +108,16 @@ public class Contact{
     public String getEmail(){
         return this.email;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj==null || obj.getClass() != this.getClass()){
+            return false;
+        }
+        Contact anotherContact = (Contact) obj;
+        return anotherContact.firstName.equalsIgnoreCase(this.firstName) && anotherContact.lastName.equalsIgnoreCase(lastName);
+    }
     
 
+    
 }
