@@ -2,7 +2,7 @@ package com.bridgelabz.service;
 
 import com.bridgelabz.model.Company;
 
-public class EmployeeWageBuilder {
+public class EmployeeWageBuilder implements EmpWagebuilderInterface{
 
     private CompanyEmpWage[] companyEmpWages;
     private int size=0;
@@ -11,6 +11,7 @@ public class EmployeeWageBuilder {
         this.companyEmpWages = new CompanyEmpWage[5];
     }
 
+    @Override
     public void addCompanyEmpWage(CompanyEmpWage companyEmpWage){
         if(companyEmpWage==null){
             throw new IllegalArgumentException("CompanyEmpWage cannot be null.");
@@ -70,6 +71,7 @@ public class EmployeeWageBuilder {
 
     }
 
+    @Override
     public void calculateAllWages(){
         for(int i=0; i<size ; i++){
             CompanyEmpWage companyEmpWage = companyEmpWages[i];

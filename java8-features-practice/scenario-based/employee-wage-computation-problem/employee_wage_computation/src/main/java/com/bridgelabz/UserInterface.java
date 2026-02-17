@@ -1,7 +1,9 @@
 package com.bridgelabz;
 
+import com.bridgelabz.controller.EmployeeWageController;
 import com.bridgelabz.model.Company;
 import com.bridgelabz.service.CompanyEmpWage;
+import com.bridgelabz.service.EmpWagebuilderInterface;
 import com.bridgelabz.service.EmployeeWageBuilder;
 
 public class UserInterface{
@@ -14,11 +16,13 @@ public class UserInterface{
         CompanyEmpWage companyEmpWage1 = new CompanyEmpWage(company1);
         CompanyEmpWage companyEmpWage2 = new CompanyEmpWage(company2);
 
-        EmployeeWageBuilder employeeWageBuilder = new EmployeeWageBuilder();
-        employeeWageBuilder.addCompanyEmpWage(companyEmpWage1);
-        employeeWageBuilder.addCompanyEmpWage(companyEmpWage2);
+        EmpWagebuilderInterface empWagebuilder = new EmployeeWageBuilder();
+        EmployeeWageController controller = new EmployeeWageController(empWagebuilder);
 
-        employeeWageBuilder.calculateAllWages();
+        controller.addCompany(companyEmpWage1);
+        controller.addCompany(companyEmpWage2);
+
+        controller.computeWages();
 
         System.out.printf("Monthly wage of Company1: %.2f INR%n", companyEmpWage1.getTotalWage());
         System.out.printf("Monthly wage of Company2: %.2f INR%n", companyEmpWage2.getTotalWage());
