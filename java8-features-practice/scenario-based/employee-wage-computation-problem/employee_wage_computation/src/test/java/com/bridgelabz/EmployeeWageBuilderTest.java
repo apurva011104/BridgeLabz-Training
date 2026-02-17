@@ -13,13 +13,13 @@ public class EmployeeWageBuilderTest {
 
     @BeforeEach
     public void initializeCompanyVariable(){
-        employeeWageBuilder = new EmployeeWageBuilder();
         this.company = new Company("Company1" , 20, 8, 4, 20, 100);
+        employeeWageBuilder = new EmployeeWageBuilder(company);
     }
 
     @Test
     public void testCalculateMonthlyWage(){
-        double monthlyWage = employeeWageBuilder.calculateMonthlyWage(company);
+        double monthlyWage = employeeWageBuilder.getTotalWage();
         double maximumWage = company.getWagePerHour() * company.getFullTimeHours() * company.getWorkingDaysPerMonth();
 
         assertTrue(maximumWage>=monthlyWage);

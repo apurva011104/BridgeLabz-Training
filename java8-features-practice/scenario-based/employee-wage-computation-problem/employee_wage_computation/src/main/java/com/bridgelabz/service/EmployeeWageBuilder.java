@@ -4,11 +4,23 @@ import com.bridgelabz.model.Company;
 
 public class EmployeeWageBuilder {
 
+    private final Company company;
+    private double totalWage;
+
+    public EmployeeWageBuilder(Company company) {
+        this.company = company;
+        this.totalWage = calculateMonthlyWage();
+    }
+
+    public double getTotalWage() {
+        return totalWage;
+    }
+
     public int checkAttendance(){
         return (int)(Math.random()*3);
     }
 
-    private double workingHours(Company company){
+    private double workingHours(){
         int attendance = checkAttendance();
         switch (attendance) {
             case 0:
@@ -22,7 +34,7 @@ public class EmployeeWageBuilder {
         }
     }
     
-    public double calculateMonthlyWage(Company company){
+    private double calculateMonthlyWage(){
 
         int maximumWorkingDaysPerMonth = company.getWorkingDaysPerMonth();
         double maximumWorkingHoursPerMonth = company.getWorkingHoursPerMonth();
@@ -33,7 +45,7 @@ public class EmployeeWageBuilder {
         double workingHours = 0;
         
         while(numberOfDays < maximumWorkingDaysPerMonth  && workingHours < maximumWorkingHoursPerMonth){
-            double workingHoursPerDay = workingHours(company);
+            double workingHoursPerDay = workingHours();
             monthlyWage += workingHoursPerDay * wagePerHour;
             workingHours+=workingHoursPerDay;
             numberOfDays++;

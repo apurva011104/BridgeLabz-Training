@@ -11,12 +11,10 @@ public class UserInterface{
         Company company2 = new Company("Company2", 30, 9, 4, 22, 120);
 
 
-        EmployeeWageBuilder employeeWageBuilder = new EmployeeWageBuilder();
+        EmployeeWageBuilder employeeWageBuilder1 = new EmployeeWageBuilder(company1);
+        EmployeeWageBuilder employeeWageBuilder2 = new EmployeeWageBuilder(company2);
 
-        double monthlyWage1 = employeeWageBuilder.calculateMonthlyWage(company1);
-        double monthlyWage2 = employeeWageBuilder.calculateMonthlyWage(company2);
-
-        System.out.printf("Monthly wage of Company1: %.2f INR%n", monthlyWage1);
-        System.out.printf("Monthly wage of Company2: %.2f INR%n", monthlyWage2);
+        System.out.printf("Monthly wage of Company1: %.2f INR%n", employeeWageBuilder1.getTotalWage());
+        System.out.printf("Monthly wage of Company2: %.2f INR%n", employeeWageBuilder2.getTotalWage());
     }
 }
