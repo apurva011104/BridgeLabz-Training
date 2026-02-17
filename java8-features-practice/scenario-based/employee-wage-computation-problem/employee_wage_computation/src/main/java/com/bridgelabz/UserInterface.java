@@ -19,9 +19,9 @@ public class UserInterface{
         
         EmployeeService service = new EmployeeService();
 
-        double dailyWage = service.calculateDailyWage(employee);
+        double dailyWage = service.calculateMonthlyWage(employee);
 
-        System.out.printf("Daily wage: %.2f INR%n", dailyWage);
+        System.out.printf("Monthly wage: %.2f INR%n", dailyWage);
 
     }
 }

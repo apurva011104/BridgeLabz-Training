@@ -7,30 +7,35 @@ public class EmployeeService{
     private static final double WAGE_PER_HOUR = 20.0;
     private static final double FULL_DAY_HOUR = 8.0;
     private static final double PART_TIME_HOUR = 4.0;
+    private static final int WORKING_DAYS_PER_MONTH = 20;
     
-    public int checkAttendance(Employee employee){
+    public int checkAttendance(){
         return (int)(Math.random()*3);
     }
 
-    public double calculateDailyWage(Employee employee){
-        int attendance = checkAttendance(employee);
-        double workingHours;
-
+    private double workingHours(){
+        int attendance = checkAttendance();
         switch (attendance) {
             case 0:
-                workingHours = 0.0;
-                break;
+                return  0.0;
             case 1:
-                workingHours = PART_TIME_HOUR;
-                break;
+                return  PART_TIME_HOUR;
             case 2:
-                workingHours = FULL_DAY_HOUR;
-                break;
+                return FULL_DAY_HOUR;
             default:
                 throw new IllegalArgumentException("Error while fetching attendance");
         }
+    }
+    
+    public double calculateMonthlyWage(Employee employee){
+        double monthlyWage = 0.0;
+        
+        for(int i=0 ; i<WORKING_DAYS_PER_MONTH ; i++){
+            double workingHours = workingHours();
+            monthlyWage += workingHours * WAGE_PER_HOUR;
+        }
 
-        return WAGE_PER_HOUR * workingHours;
+        return monthlyWage;
 
     }
 }
