@@ -309,3 +309,65 @@ Problem statement topics: JSON data and file handling, Java Lambda Expressions
 [JSON Data and File Handling Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/json), [Java Lambda Expressions Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/lambda-expressions)     
 
 ## - 5 Feburary 2026
+Topics studied: Java functional interfaces    
+Problem statement topics: Java functional interfaces     
+[Java functional interfaces link](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/functional-interface)   
+
+## - 6 Feburary 2026
+Topics studied: Java stream API     
+Problem statement topics: Java stream API   
+[Java Stream API link](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/stream-api)
+
+## - 7 Feburary 2026
+Topics studied: Java Collectors     
+Problem statement topics: Java collectors, Scenario-based problem       
+[Java Collectors Link](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/collectors)     
+**Scenario-based Problem statements:** [Ocean Fleet](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/ocean-fleet)
+
+## Week 8 (9/Feburary/2026 - 14/Feburary/2026) 
+
+## - 9/Feburary/2026
+Topics studied: Design patterns, Multi-threading    
+Problem statement topics: Design patterns     
+[Design patterns problem statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/design-pattern)    
+
+## - 10/Feburary/2026
+Mock test conducted by bridgelabz where we solved 3 scenario based problem statements.    
+
+## - 11/Feburary/2026
+Topics studied: Multi-threading, SonarQube     
+Problem statement topics: Multi-threading, Scenario-based problem statement using sonarqube      
+[Multi-threading problem statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/multithreading-practice/multithreading-practice/gcr-codebase/multithreading)
+**Scenario-based Problem statements:** [Music Playlist Manager](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/music-playlist-manager)     
+
+## - 12/Feburary/2026
+Topics studied: JDBC
+Problem statement topics: Scenario-based problem statements    
+**Scenario-based Problem statements:** [Test Case](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/test-case)
+
+## - 13/Feburary/2026
+Topics studied: JDBC
+Problem statement topics: Scenario-based problem statements    
+**Scenario-based Problem statements:** [Food Delivery Order Routing System](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/food-delivery-order-routing-system), [Online Classroom Attendance Tracker](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/online-classroom-attendance-tracker)
+
+## - 14/Feburary/2026
+Topics studied: JDBC
+Problem statement topics: Scenario-based problem statements    
+**Scenario-based Problem statements:** [Employee Leave Management System](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/employee-leave-management-system), 
+
+## Week 9 (16/Feburary/2026 - 21/Feburary/2026) 
+
+## - 16/Feburary/2026
+Topics studied: Revision of previous topics   
+Problem statement topics: Scenario-based problem     
+**Scenario-based problem statement** [Employee Wage Computation](https://github.com/apurva011104/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/scenario-based/employee-wage-computation-problem)     
+
+## - 17/Feburary/2026
+Topics studied: Revision of previous topics   
+Problem statement topics: Scenario-based problem     
+**Scenario-based problem statement** [Address Book](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/address-book)     
+
+## - 18/Feburary/2026
+Mock test conducted by Capgemini     
+Problem statement topics: Quantity Measurement App UC1 & UC2    
+[Quantity Measurement App UC1 Link](https://github.com/apurva011104/Quantity-Measurement-App/tree/feature/UC1-FeetEquality), [Quantity Measurement App UC2 Link](https://github.com/apurva011104/Quantity-Measurement-App/tree/feature/UC2-InchEquality)
