@@ -371,3 +371,8 @@ Problem statement topics: Scenario-based problem
 Mock test conducted by Capgemini     
 Problem statement topics: Quantity Measurement App UC1 & UC2    
 [Quantity Measurement App UC1 Link](https://github.com/apurva011104/Quantity-Measurement-App/tree/feature/UC1-FeetEquality), [Quantity Measurement App UC2 Link](https://github.com/apurva011104/Quantity-Measurement-App/tree/feature/UC2-InchEquality)
+
+### - 19/Feburary/2026    
+Problem statement topics:  Leetcode problem statements, Quantity Measurement App UC3   
+**Leetcode Problem statements:** [Count Binary Substrings](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/CountBinarySubstrings.java), [Reverse bits](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ReverseBits.java)       
+[Quantity Measurement App UC13Link](https://github.com/apurva011104/Quantity-Measurement-App/tree/feature/UC3-GenericQuantityClassForDRYPrinciple)
