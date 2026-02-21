@@ -376,3 +376,7 @@ Problem statement topics: Quantity Measurement App UC1 & UC2
 Problem statement topics:  Leetcode problem statements, Quantity Measurement App UC3   
 **Leetcode Problem statements:** [Count Binary Substrings](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/CountBinarySubstrings.java), [Reverse bits](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ReverseBits.java)       
 [Quantity Measurement App UC13Link](https://github.com/apurva011104/Quantity-Measurement-App/tree/feature/UC3-GenericQuantityClassForDRYPrinciple)
+
+### - 20/Feburary/2026    
+Problem statement topics:  Leetcode problem statements, Quantity measurement app UC1, UC2 and UC3 (Refactored them)    
+**Leetcode Problem statements:** [Special Binary String](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SpecialBinaryString.java), [Valid Parenthesis String](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/ValidParenthesisString.java)       
