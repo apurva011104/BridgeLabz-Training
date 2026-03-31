@@ -3,6 +3,6 @@
 *.bin
 *.txt
 *.jpeg
-*.jpg
+*.bin
+.vscode/*
 *.csv
-*.json
