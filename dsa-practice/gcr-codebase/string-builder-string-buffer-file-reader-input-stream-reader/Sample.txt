@@ -1,0 +1,13 @@
+This file is going to be read by file reader.
+If you are reading this, my greetings to you.
+Posting some random facts about technology:
+1. Google's First Tweet was in binary.
+2. Apple were originally designing an apple shaped flip phone.
+3. 90% of the world's data was created in the last two years.
+4. In 2020, there were over 2.7 billion gamers worldwide.
+5. The first computer virus was created in 1986.
+6. The first computer mouse was invented in 1964 by Douglas Engelbart.
+7. Ada Lovelace, a woman, was the world's first computer programmer.
+8. The world's first electronic computer, the Colossus, was built in 1943.
+9. The first webcam was invented at the University of Cambridge to monitor the coffee pot in the computer science department.
+10. The first computer, known as the ENIAC, weighed 30 tons and took up an entire room.

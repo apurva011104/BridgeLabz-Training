@@ -1,4 +1,6 @@
 *.class
+*.bin
+*.bin
 *.txt
 *.jpeg
 *.bin

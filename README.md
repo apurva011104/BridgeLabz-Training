@@ -36,7 +36,31 @@ BridgeLabz-Training
 │   │   ├── stacks-and-queues     
 │   │   └── string-builder-string-buffer-file-reader-input-stream-reader       
 │   ├── leetcode-codebase      
-│   └── scenario-based                 
+│   └── scenario-based        
+├── collections-practice       
+|   ├── gcr-codebase   
+│   │   ├── collections-framework     
+│   │   ├── exception-handling    
+│   │   ├── java-annotations     
+│   │   ├── java-generics     
+│   │   ├── java-io-streams   
+│   │   ├── java-reflection     
+│   │   ├── java-regex     
+│   │   └── junit  
+|   ├── leetcode-codebase    
+|   └── scenario-based      
+├── io-programming-practice       
+|   ├── gcr-codebase   
+|   |   ├── csv   
+│   │   └── json       
+|   ├── leetcode-codebase    
+|   └── scenario-based      
+├── java8-features-practice      
+|   ├── gcr-codebase    
+|   |   ├── lambda-expressions   
+│   │   └── functional-interfaces   
+|   ├── leetcode-codebase    
+|   └── scenario-based      
 └──README.md
 
 ## Week 1 (17/December/2025 - 21/December/2025): Getting Started with Git and Basics of Programming Using Java
