@@ -1,4 +1,10 @@
 *.class
+*.bin
+*.bin
+*.txt
+*.jpeg
+*.bin
+.vscode/*
 *.csv
 *.json
 target/
