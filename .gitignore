@@ -1,5 +1,8 @@
 *.class
+*.bin
 *.txt
+*.jpeg
+*.jpg
 .vscode/*
 *.csv
 *.json
