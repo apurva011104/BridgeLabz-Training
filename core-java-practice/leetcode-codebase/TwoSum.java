@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class TwoSum {
+    public int[] twoSum(int[]arr, int target){
+        int []ans=new int[2];
+        Map<Integer,Integer> map=new HashMap<>();           //Create a hashmap to store the elements and their indices
+        for(int i=0;i<arr.length;i++){
+            if(map.containsKey(target-arr[i])){
+                return new int[]{i,map.get(target-arr[i])};         //If the complement exists in the map, return the indices
+            }
+            else
+                map.put(arr[i],i);                 //Otherwise, add the current element to the map
+        }
+        return ans;
+    }
+    public static void main(String[] args){
+        TwoSum twoSum=new TwoSum();
+        int arr[]={2,7,11,15,4,8,5};
+        int target=9;
+        int result[]=twoSum.twoSum(arr,target);
+        System.out.println("Indices: "+result[0]+", "+result[1]);
+    }
+}
