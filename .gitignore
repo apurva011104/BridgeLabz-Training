@@ -6,3 +6,6 @@
 *.bin
 .vscode/*
 *.csv
+*.json
+target/
+*.log
